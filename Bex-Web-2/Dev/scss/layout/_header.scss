@@ -2,7 +2,7 @@
     Header
 ============= */
 header {
-    background-color: $headerbg;
+
     position: fixed;
     top:0;
     width: 100%;
@@ -20,7 +20,7 @@ header {
     section{
         grid-area:burger;
         button{
-            background-color: $headerbg;
+
             border: none;
             outline: none;
             color:$white;
@@ -39,7 +39,7 @@ header {
 
         @include lg{
             display: block !important;
-            background-color: $headerbg;
+        
 
         }
     }

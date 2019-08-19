@@ -482,7 +482,6 @@ header {
     Header
 ============= */
 header {
-  background-color: #72B107;
   position: fixed;
   top: 0;
   width: 100%;
@@ -495,7 +494,6 @@ header {
   header section {
     grid-area: burger; }
     header section button {
-      background-color: #72B107;
       border: none;
       outline: none;
       color: #fff; }
@@ -509,8 +507,7 @@ header {
     background-color: rgba(0, 0, 0, 0.5); }
     @media (min-width: 990px) {
       header nav {
-        display: block !important;
-        background-color: #72B107; } }
+        display: block !important; } }
 
 /* =============
     Footer
@@ -538,7 +535,6 @@ footer {
       footer ul {
         justify-content: flex-end; } }
     footer ul li i {
-      color: #72B107;
       font-size: 2.5rem; }
       @media (min-width: 523px) {
         footer ul li i {
