@@ -472,7 +472,7 @@ header {
   header nav {
     grid-area: nav;
     display: none;
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: #000; }
     @media (min-width: 990px) {
       header nav {
         display: block !important; } }
