@@ -311,87 +311,36 @@ template {
 /* =============
     Base
 ============= */
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h5,
-body p {
-  font-weight: normal;
-  margin: 0;
-  padding: 0; }
-
-body ul {
-  margin: 0;
-  padding: 0; }
-  body ul li {
-    list-style: none; }
+body {
+  background-color: #C4C4C4; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h5,
+  body p {
+    font-weight: normal;
+    margin: 0;
+    padding: 0; }
+  body ul {
+    margin: 0;
+    padding: 0; }
+    body ul li {
+      list-style: none; }
 
 a:link,
 a:visited {
   text-decoration: none;
   transition: 0.25s; }
 
-.master-grid {
-  display: grid;
-  grid-template-areas: ". content .";
-  grid-template-columns: 10px auto 10px; }
-  .master-grid > div {
-    grid-area: content; }
-
-.title {
-  background-color: #000;
-  display: grid;
-  grid-template-areas: "img text .";
-  grid-template-columns: 40% auto 2%;
-  grid-template-rows: 150px; }
-  @media (min-width: 523px) {
-    .title {
-      grid-template-columns: 40% auto 2%;
-      grid-template-rows: 180px; } }
-  @media (min-width: 715px) {
-    .title {
-      grid-template-rows: 200px; } }
-  @media (min-width: 990px) {
-    .title {
-      grid-template-rows: 190px; } }
-  @media (min-width: 1440px) {
-    .title {
-      grid-template-areas: "img text .";
-      grid-template-columns: 33% 33% auto; } }
-  .title div {
-    background-image: url("../img/housing-respon.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-area: img;
-    height: 100%; }
-  .title h1 {
-    color: #C4C4C4;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.75rem;
-    font-weight: 500;
-    grid-area: text;
-    margin-top: 100px;
-    text-align: right; }
-    @media (min-width: 523px) {
-      .title h1 {
-        font-size: 3.125rem;
-        margin-top: 130px; } }
-    @media (min-width: 715px) {
-      .title h1 {
-        font-size: 4.375rem; } }
-    @media (min-width: 990px) {
-      .title h1 {
-        font-size: 6.25rem;
-        margin-top: 100px; } }
-    @media (min-width: 1440px) {
-      .title h1 {
-        text-align: center; } }
-
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, p {
+  padding: 0;
+  margin: 0; }
+
 /* =============
     Buttons
 ============= */
@@ -418,7 +367,7 @@ header {
   font-size: 1.4375rem; }
   header a:link,
   header a:visited {
-    color: #C4C4C4; }
+    color: #fff; }
   header a:active,
   header a:hover {
     color: #000; }
@@ -438,45 +387,50 @@ header {
         justify-content: flex-start;
         margin: 10px; } }
     header nav ul li {
-      color: #C4C4C4; }
+      color: #fff; }
       @media (min-width: 990px) {
         header nav ul li {
           padding: 0 10px;
-          border-right: 2px solid #C4C4C4; } }
+          border-right: 2px solid #fff; } }
     header nav ul li:last-child {
       border: none; }
 
 /* =============
     Header
 ============= */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 20% auto;
-  grid-template-areas: "burger ." "nav nav"; }
-  @media (min-width: 990px) {
-    header {
-      grid-template-areas: "nav ."; } }
-  header section {
-    grid-area: burger; }
-    header section button {
-      border: none;
-      outline: none;
-      color: #C4C4C4; }
-    @media (min-width: 990px) {
-      header section {
-        display: none;
-        margin: 0; } }
-  header nav {
-    grid-area: nav;
-    display: none;
-    background-color: #000; }
-    @media (min-width: 990px) {
-      header nav {
-        display: block !important; } }
-
 /* =============
     Footer
 ============= */
+/* =============
+    About
+============= */
+#about div {
+  background-image: url("../img/aboutHero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 260px; }
+  #about div article {
+    color: white;
+    display: grid;
+    grid-template-areas: ". iconic ." ". tattoo .";
+    grid-template-columns: 33% auto 33%;
+    padding-top: 135px;
+    text-align: center; }
+    #about div article h1 {
+      font-family: 'Lobster', cursive;
+      font-size: 3.75rem;
+      grid-area: iconic; }
+    #about div article h2 {
+      background-color: #B11313;
+      font-family: 'Pirata One', cursive;
+      font-size: 2.5rem;
+      grid-area: tattoo; }
+
+#about p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.1875rem;
+  padding: 23px 15px;
+  text-align: justify; }

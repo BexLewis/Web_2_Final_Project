@@ -1,0 +1,44 @@
+/* =============
+    About
+============= */
+#about {
+
+    div {
+        background-image: url("../img/aboutHero.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 260px;
+
+        article {
+            color: white;
+            display: grid;
+            grid-template-areas: ". iconic ." ". tattoo .";
+            grid-template-columns: 33% auto 33%;
+            padding-top: 135px;
+            text-align: center;
+
+            h1 {
+                font-family: 'Lobster', cursive;
+                font-size: rem-calc(60);
+                grid-area: iconic;
+            }
+
+            h2 {
+                background-color: $red;
+                font-family: 'Pirata One', cursive;
+                font-size: rem-calc(40);
+                grid-area: tattoo;
+            }
+        }
+
+}
+    p {
+        font-family: 'Barlow', sans-serif;
+        font-size: rem-calc(16);
+        font-weight: 500;
+        line-height: rem-calc(19);
+        padding: 23px 15px;
+        text-align: justify;
+    }
+}

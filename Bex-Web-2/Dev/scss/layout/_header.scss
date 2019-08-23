@@ -2,47 +2,4 @@
     Header
 ============= */
 header {
-
-    position: fixed;
-    top:0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20% auto;
-    grid-template-areas:
-    "burger ."
-    "nav nav";
-
-    @include lg{
-        grid-template-areas:
-        "nav ."
-    }
-
-    section{
-        grid-area:burger;
-        button{
-
-            border: none;
-            outline: none;
-            color:$white;
-            }
-        @include lg{
-            display: none;
-            margin: 0;
-        }
-    }
-
-    nav{
-        grid-area:nav;
-        display: none;
-        background-color: $black;
-
-
-        @include lg{
-            display: block !important;
-
-
-        }
-    }
-
-
 }
