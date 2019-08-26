@@ -1,0 +1,103 @@
+/* =============
+    Mark
+============= */
+#mark{
+    padding-top: 130px;
+    h1{
+        font-family: 'Pirata One', cursive;
+        text-align: center;
+        color:$red;
+        font-size: rem-calc(45);
+    }
+    div{
+    background-color: $blackbg;
+    display: grid;
+    grid-template-areas:
+    "mark"
+    "text"
+    "sub"
+    "grid"
+    "button";
+    grid-gap:18px;
+
+    div{
+        grid-area:mark;
+        height: 245px;
+        background-image: url("../img/markHero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    p{
+        text-align: justify;
+        padding: 0 12px;
+        color:$white;
+        font-size: rem-calc(16);
+        line-height: rem-calc(19);
+        font-family: 'Barlow', sans-serif;
+    }
+
+    h3{
+        font-size: rem-calc(30);
+        font-family: 'Gentium Book Basic', serif;
+        color:$white;
+        text-align: center;
+    }
+
+    ul{
+        padding: 0 12px;
+        grid-area:grid;
+        display: grid;
+        grid-template-areas:
+        "item-1 item-2"
+        "item-1 item-3"
+        "item-4 item-4";
+        grid-gap:12px;
+        grid-template-rows: 147px 147px 243px;
+
+        li:nth-child(1){
+            grid-area:item-1;
+            background-image: url("../img/gallery/2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+        }
+        li:nth-child(2){
+            grid-area:item-2;
+            background-image: url("../img/gallery/13.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        li:nth-child(3){
+            grid-area:item-3;
+            background-image: url("../img/gallery/3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        li:nth-child(4){
+            grid-area:item-4;
+            background-image: url("../img/gallery/8.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0px -80px;
+        }
+
+    }
+
+    article{
+        padding-left:71%;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        p{
+            text-align: center;
+            padding:7px;
+        span{
+            display: none;
+        }
+    }
+    }
+
+}
+}

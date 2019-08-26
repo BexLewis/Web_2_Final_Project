@@ -30,3 +30,22 @@ a:visited {
     text-decoration: none;
     transition: 0.25s;
 }
+
+
+
+.link-button{
+    background-color: $gray;
+    border: 2px solid $red;
+    a:link,
+    a:visited {
+        font-family: 'Gentium Book Basic', serif;
+        color:$white;
+        text-decoration: none;
+        transition: 0.25s;
+    }
+    a:hover, a:active{
+        font-family: 'Gentium Book Basic', serif;
+        color:$red;
+    }
+
+}

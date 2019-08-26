@@ -1,0 +1,48 @@
+/* =============
+    Appointments
+============= */
+#appointments{
+    background-color: $blackbg;
+    text-align: center;
+    h1{
+        color:$red;
+        font-family: 'Pirata One', cursive;
+        font-size: rem-calc(45);
+        padding-bottom:30px;
+    }
+div{
+    padding: 0 27px;
+        background-color: $lightgray;
+        font-family: 'Barlow', sans-serif;
+        text-align: justify;
+
+        h2{
+            font-family: 'Gentium Book Basic', serif;
+            text-align: center;
+        }
+        p{
+            padding: 27px 0;
+        }
+
+        p:nth-child(3){
+            display: none;
+        }
+
+        a:link,
+        a:visited {
+            font-family: 'Gentium Book Basic', serif;
+            color:$red;
+            text-decoration: none;
+            transition: 0.25s;
+            font-size: rem-calc(22);
+            line-height:rem-calc(25);
+            text-align: center;
+            display: block;
+            font-weight:500;
+        }
+        a:hover, a:active{
+            color:$black;
+
+        }
+    }
+}

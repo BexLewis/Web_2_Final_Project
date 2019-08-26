@@ -334,6 +334,19 @@ a:visited {
   text-decoration: none;
   transition: 0.25s; }
 
+.link-button {
+  background-color: #353535;
+  border: 2px solid #B11313; }
+  .link-button a:link,
+  .link-button a:visited {
+    font-family: 'Gentium Book Basic', serif;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.25s; }
+  .link-button a:hover, .link-button a:active {
+    font-family: 'Gentium Book Basic', serif;
+    color: #B11313; }
+
 /* =============
     Typography
 ============= */
@@ -434,3 +447,195 @@ header {
   line-height: 1.1875rem;
   padding: 23px 15px;
   text-align: justify; }
+
+/* =============
+    Appointments
+============= */
+#appointments {
+  background-color: #131313;
+  text-align: center; }
+  #appointments h1 {
+    color: #B11313;
+    font-family: 'Pirata One', cursive;
+    font-size: 2.8125rem;
+    padding-bottom: 30px; }
+  #appointments div {
+    padding: 0 27px;
+    background-color: #C4C4C4;
+    font-family: 'Barlow', sans-serif;
+    text-align: justify; }
+    #appointments div h2 {
+      font-family: 'Gentium Book Basic', serif;
+      text-align: center; }
+    #appointments div p {
+      padding: 27px 0; }
+    #appointments div p:nth-child(3) {
+      display: none; }
+    #appointments div a:link,
+    #appointments div a:visited {
+      font-family: 'Gentium Book Basic', serif;
+      color: #B11313;
+      text-decoration: none;
+      transition: 0.25s;
+      font-size: 1.375rem;
+      line-height: 1.5625rem;
+      text-align: center;
+      display: block;
+      font-weight: 500; }
+    #appointments div a:hover, #appointments div a:active {
+      color: #000; }
+
+/* =============
+    Chris
+============= */
+#chris {
+  padding-top: 130px; }
+  #chris h1 {
+    font-family: 'Pirata One', cursive;
+    text-align: center;
+    color: #B11313;
+    font-size: 2.8125rem; }
+  #chris div {
+    background-color: #131313;
+    display: grid;
+    grid-template-areas: "chris" "text" "sub" "grid" "button";
+    grid-gap: 18px; }
+    #chris div div {
+      grid-area: chris;
+      height: 245px;
+      background-image: url("../img/chrisHero.jpg");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    #chris div p {
+      text-align: justify;
+      padding: 0 12px;
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.1875rem;
+      font-family: 'Barlow', sans-serif; }
+    #chris div h3 {
+      font-size: 1.875rem;
+      font-family: 'Gentium Book Basic', serif;
+      color: #fff;
+      text-align: center; }
+    #chris div ul {
+      padding: 0 12px;
+      grid-area: grid;
+      display: grid;
+      grid-template-areas: "item-1 item-2" "item-3 item-3";
+      grid-gap: 12px;
+      grid-template-rows: 147px 147px; }
+      #chris div ul li:nth-child(1) {
+        grid-area: item-1;
+        background-image: url("../img/gallery/9.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      #chris div ul li:nth-child(2) {
+        grid-area: item-2;
+        background-image: url("../img/gallery/9.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; }
+    #chris div article {
+      padding-left: 71%;
+      padding-bottom: 10px;
+      padding-right: 10px; }
+      #chris div article p {
+        text-align: center;
+        padding: 7px; }
+        #chris div article p span {
+          display: none; }
+
+/* =============
+    Mark
+============= */
+#mark {
+  padding-top: 130px; }
+  #mark h1 {
+    font-family: 'Pirata One', cursive;
+    text-align: center;
+    color: #B11313;
+    font-size: 2.8125rem; }
+  #mark div {
+    background-color: #131313;
+    display: grid;
+    grid-template-areas: "mark" "text" "sub" "grid" "button";
+    grid-gap: 18px; }
+    #mark div div {
+      grid-area: mark;
+      height: 245px;
+      background-image: url("../img/markHero.jpg");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    #mark div p {
+      text-align: justify;
+      padding: 0 12px;
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.1875rem;
+      font-family: 'Barlow', sans-serif; }
+    #mark div h3 {
+      font-size: 1.875rem;
+      font-family: 'Gentium Book Basic', serif;
+      color: #fff;
+      text-align: center; }
+    #mark div ul {
+      padding: 0 12px;
+      grid-area: grid;
+      display: grid;
+      grid-template-areas: "item-1 item-2" "item-1 item-3" "item-4 item-4";
+      grid-gap: 12px;
+      grid-template-rows: 147px 147px 243px; }
+      #mark div ul li:nth-child(1) {
+        grid-area: item-1;
+        background-image: url("../img/gallery/2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      #mark div ul li:nth-child(2) {
+        grid-area: item-2;
+        background-image: url("../img/gallery/13.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      #mark div ul li:nth-child(3) {
+        grid-area: item-3;
+        background-image: url("../img/gallery/3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      #mark div ul li:nth-child(4) {
+        grid-area: item-4;
+        background-image: url("../img/gallery/8.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px -80px; }
+    #mark div article {
+      padding-left: 71%;
+      padding-bottom: 10px;
+      padding-right: 10px; }
+      #mark div article p {
+        text-align: center;
+        padding: 7px; }
+        #mark div article p span {
+          display: none; }
+
+/* =============
+    Contact
+============= */
+#contact {
+  background-color: #131313; }
+  #contact h1 {
+    font-family: 'Pirata One', cursive;
+    text-align: center;
+    color: #B11313;
+    font-size: 2.8125rem; }
+
+/* =============
+    Studio
+============= */
+#studio {
+  padding-top: 130px; }
+  #studio div {
+    background-color: #131313; }
+    #studio div h1 {
+      font-family: 'Pirata One', cursive;
+      text-align: center;
+      color: #B11313;
+      font-size: 2.8125rem; }
