@@ -482,35 +482,15 @@ header {
 ============= */
 footer {
   background-color: #353535;
-  height: 90px;
-  margin-top: 0px;
-  padding: 0 140px; }
+  height: 90px; }
   footer ul {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 20px 0; }
-    @media (min-width: 523px) {
-      footer ul {
-        justify-content: flex-end; } }
-    @media (min-width: 715px) {
-      footer ul {
-        justify-content: flex-end; } }
-    @media (min-width: 990px) {
-      footer ul {
-        justify-content: flex-end; } }
+    padding: 15px 70px; }
     footer ul li i {
       color: #fff;
       font-size: 3.75rem; }
-      @media (min-width: 523px) {
-        footer ul li i {
-          padding: 0 20px; } }
-      @media (min-width: 715px) {
-        footer ul li i {
-          padding: 0 20px; } }
-      @media (min-width: 990px) {
-        footer ul li i {
-          padding: 0 20px; } }
 
 /* =============
     Burger
