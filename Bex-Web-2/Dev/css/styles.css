@@ -446,6 +446,7 @@ header nav {
 header {
   background-color: #000;
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%;
   display: grid;
