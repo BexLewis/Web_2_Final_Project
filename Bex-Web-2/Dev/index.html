@@ -119,35 +119,64 @@
         </div>
     </section>
 
+
     <section id="contact">
+
+    <!-- Text -->
+        <article>
         <h1>Location and Contact</h1>
-        <div>
-        </div>
+        <div></div>
         <h2>63 Norwood Downingtown</h2>
         <h2>PA 19335</h2>
         <h2>Phone: (484) 631-5434</h2>
-        <p class="link-button"><a href="">Maps</a></p>
-        <p class="link-button"><a href="">Contact</a></p>
-        <h2>Contact</h2>
-        <ul>
-            <li>Name</li>
-            <li></li>
-            <li>Email</li>
-            <li></li>
-            <li>Message</li>
-            <li></li>
-        </ul>
-        <p class="link-button">SUBMIT</p>
-        <div id="carousel"></div>
+        <section id="locationButtons">
+        <p class="link-button"><a href="">MAPS</a></p>
+        <p class="link-button"><a href="">CONTACT</a></p>
+    </section>
+    </article>
+<!-- Form -->
+        <section id="form">
+                <div>
+                    <h1>Contact Form</h1>
+                    <div class="divide"></div>
+                    <form action="https://formspree.io/rel67@drexel.edu" method="POST">
+                        <!-- first name -->
+                        <div>
+                            <label>
+                                <input type="text" placeholder="First Name" name="First Name">
+                                <input type="hidden" name="_next" value="http://www.bexlewisdesign.com/web2/final/thanks.html" />
+                                <input type="text" name="_gotcha" style="display:none" />
+                            </label>
+                        </div>
+                        <!-- email -->
+                        <div>
+                            <label>
+                                <input type="email" placeholder="Email" name="Email" required>
+                            </label>
+                        </div>
+                        <!-- comment -->
+                        <div>
+                            <label>
+                                <textarea placeholder="Comment" name="Comment"></textarea>
+                            </label>
+                        </div>
+                        <div>
+                            <button type="submit" class="button" value="send">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
     </section>
 
     <footer>
-        <!-- <ul>
-            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        </ul> -->
-    </footer>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </footer>
+
 
 
     <!-- jQuery -->

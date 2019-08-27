@@ -1,5 +1,45 @@
 /* =============
     Footer
 ============= */
+/* =============
+    Footer
+============= */
 footer {
+    background-color: $gray;
+    height: 90px;
+    margin-top: 0px;
+    padding: 0 140px;
+
+
+    ul {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        @include sm {
+            justify-content: flex-end;
+        }
+        @include md {
+            justify-content: flex-end;
+        }
+        @include lg {
+            justify-content: flex-end;
+        }
+
+        li {
+            i {
+                color: $white;
+                font-size: rem-calc(60);
+                @include sm {
+                    padding: 0 20px;
+                }
+                @include md {
+                    padding: 0 20px;
+                }
+                @include lg {
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
 }

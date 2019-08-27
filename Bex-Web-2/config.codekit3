@@ -272,6 +272,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/Dev/img/locationHero.jpg": {
+		"ft": 16384,
+		"iS": 476585,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Dev/img/locationHero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/Dev/img/markHero.jpg": {
 		"ft": 16384,
 		"iS": 282609,
