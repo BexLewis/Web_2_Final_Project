@@ -7,7 +7,7 @@
         font-family: 'Pirata One', cursive;
         text-align: center;
         color:$red;
-        font-size: rem-calc(45);
+        font-size: rem-calc(50);
     }
     div{
     background-color: $blackbg;
@@ -52,6 +52,8 @@
             display: flex;
             align-items: center;
             padding-right: 100px;
+            line-height: (26);
+            font-size: rem-calc(18);
         }
     }
 
@@ -117,7 +119,7 @@
     }
 
     article{
-        padding-left:71%;
+        margin-left: 60%;
         padding-bottom: 10px;
         padding-right: 10px;
         p{

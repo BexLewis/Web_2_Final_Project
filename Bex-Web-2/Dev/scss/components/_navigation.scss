@@ -4,6 +4,7 @@
 header {
 
     nav {
+    
         font-family: 'Gentium Book Basic', serif;
         font-size: rem-calc(23);
 
@@ -17,7 +18,6 @@ header {
             a:hover {
                 color: $red;
                 @include lg{
-
                     border-bottom: 2px solid $red;
                     padding-bottom: 3px;
                 }
@@ -37,6 +37,7 @@ header {
             li {
 
                 color:$white;
+                padding: 10px 0;
                 @include lg{
                 padding:0 10px;
 

@@ -10,7 +10,7 @@ var ifClicked = false;
 function burgerClick(){
     console.log("clicks");
     if(ifClicked === false){
-        TweenMax.to($topLine,animationSpeed,{rotation:45, y:20});
+        TweenMax.to($topLine,animationSpeed,{rotation:45, y:6});
         TweenMax.to($middleLine,animationSpeed,{alpha:0, scaleX:0});
         TweenMax.to($bottomLine,animationSpeed,{rotation:-45, y:-20});
         ifClicked = true;

@@ -432,7 +432,8 @@ header nav {
         justify-content: flex-start;
         margin: 10px; } }
     header nav ul li {
-      color: #fff; }
+      color: #fff;
+      padding: 10px 0; }
       @media (min-width: 990px) {
         header nav ul li {
           padding: 0 10px;
@@ -500,11 +501,11 @@ footer {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  height: 40px;
+  height: 30px;
   outline: none;
   position: relative;
-  width: 50px;
-  margin: 10px 5px; }
+  width: 35px;
+  margin: 20px 5px; }
   #burger-container div {
     background-color: #B11313;
     height: 6px;
@@ -514,10 +515,10 @@ footer {
   #burger-container div:nth-child(1) {
     top: 0; }
   #burger-container div:nth-child(2) {
-    top: 20px; }
+    top: 13px; }
   #burger-container div:nth-child(3) {
     margin: 0;
-    top: 40px; }
+    top: 25px; }
 
 /* =============
     About
@@ -527,30 +528,32 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 260px; }
+  height: 300px; }
   #about div article {
     color: white;
     display: grid;
     grid-template-areas: ". iconic ." ". tattoo .";
-    grid-template-columns: 33% auto 33%;
+    grid-template-columns: 1fr 1fr 1fr;
     padding-top: 135px;
     text-align: center; }
     #about div article h1 {
       font-family: 'Lobster', cursive;
-      font-size: 3.75rem;
-      grid-area: iconic; }
+      font-size: 4.6875rem;
+      grid-area: iconic;
+      text-align: center; }
     #about div article h2 {
       background-color: #B11313;
       font-family: 'Pirata One', cursive;
       font-size: 2.5rem;
-      grid-area: tattoo; }
+      grid-area: tattoo;
+      text-align: center; }
 
 #about p {
   font-family: 'Barlow', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.1875rem;
-  padding: 23px 15px;
+  padding: 23px 25px;
   text-align: justify; }
 
 /* =============
@@ -650,7 +653,7 @@ footer {
         #chris div ul li:nth-child(3) a {
           background-image: url("../img/gallery/12.jpg"); }
     #chris div article {
-      padding-left: 71%;
+      padding-left: 60%;
       padding-bottom: 10px;
       padding-right: 10px; }
       #chris div article p {
@@ -668,7 +671,7 @@ footer {
     font-family: 'Pirata One', cursive;
     text-align: center;
     color: #B11313;
-    font-size: 2.8125rem; }
+    font-size: 3.125rem; }
   #mark div {
     background-color: #131313;
     display: grid;
@@ -699,7 +702,9 @@ footer {
         #mark div p {
           display: flex;
           align-items: center;
-          padding-right: 100px; } }
+          padding-right: 100px;
+          line-height: 26;
+          font-size: 1.125rem; } }
     #mark div h3 {
       font-size: 1.875rem;
       font-family: 'Gentium Book Basic', serif;
@@ -738,7 +743,7 @@ footer {
         #mark div ul li:nth-child(4) a {
           background-image: url("../img/gallery/8.jpg"); }
     #mark div article {
-      padding-left: 71%;
+      margin-left: 60%;
       padding-bottom: 10px;
       padding-right: 10px; }
       #mark div article p {
