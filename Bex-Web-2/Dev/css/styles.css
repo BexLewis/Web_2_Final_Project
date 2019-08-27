@@ -418,11 +418,11 @@ header nav {
     color: #fff; }
   header nav a:active,
   header nav a:hover {
-    color: #000; }
+    color: #B11313; }
     @media (min-width: 990px) {
       header nav a:active,
       header nav a:hover {
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid #B11313;
         padding-bottom: 3px; } }
   header nav ul {
     margin: 10px 20px; }
@@ -674,12 +674,20 @@ footer {
     display: grid;
     grid-template-areas: "mark" "text" "sub" "grid" "button";
     grid-gap: 18px; }
+    @media (min-width: 715px) {
+      #mark div {
+        grid-template-areas: "mark text" "grid grid" ". button";
+        grid-template-columns: 50% auto;
+        grid-gap: 50px; } }
     #mark div div {
       grid-area: mark;
       height: 245px;
       background-image: url("../img/markHero.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
+      @media (min-width: 715px) {
+        #mark div div {
+          height: 379px; } }
     #mark div p {
       text-align: justify;
       padding: 0 12px;
@@ -687,11 +695,19 @@ footer {
       font-size: 1rem;
       line-height: 1.1875rem;
       font-family: 'Barlow', sans-serif; }
+      @media (min-width: 715px) {
+        #mark div p {
+          display: flex;
+          align-items: center;
+          padding-right: 100px; } }
     #mark div h3 {
       font-size: 1.875rem;
       font-family: 'Gentium Book Basic', serif;
       color: #fff;
       text-align: center; }
+      @media (min-width: 715px) {
+        #mark div h3 {
+          display: none; } }
     #mark div ul {
       padding: 0 12px;
       grid-area: grid;

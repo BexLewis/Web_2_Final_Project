@@ -15,10 +15,10 @@ header {
 
             a:active,
             a:hover {
-                color: $black;
+                color: $red;
                 @include lg{
 
-                    border-bottom: 2px solid $black;
+                    border-bottom: 2px solid $red;
                     padding-bottom: 3px;
                 }
 

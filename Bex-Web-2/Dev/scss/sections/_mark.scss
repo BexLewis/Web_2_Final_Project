@@ -19,6 +19,15 @@
     "grid"
     "button";
     grid-gap:18px;
+    @include md{
+        grid-template-areas:
+        "mark text"
+        "grid grid"
+        ". button";
+        grid-template-columns:50% auto;
+        grid-gap:50px;
+    }
+
 
     div{
         grid-area:mark;
@@ -26,6 +35,9 @@
         background-image: url("../img/markHero.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        @include md{
+            height: 379px;
+        }
     }
 
     p{
@@ -35,6 +47,12 @@
         font-size: rem-calc(16);
         line-height: rem-calc(19);
         font-family: 'Barlow', sans-serif;
+
+        @include md{
+            display: flex;
+            align-items: center;
+            padding-right: 100px;
+        }
     }
 
     h3{
@@ -42,6 +60,10 @@
         font-family: 'Gentium Book Basic', serif;
         color:$white;
         text-align: center;
+
+        @include md{
+            display: none;
+        }
     }
 
     ul{
