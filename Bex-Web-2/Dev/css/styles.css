@@ -557,7 +557,8 @@ footer {
 ============= */
 #appointments {
   background-color: #131313;
-  text-align: center; }
+  text-align: center;
+  padding-top: 110px; }
   #appointments h1 {
     color: #B11313;
     font-family: 'Pirata One', cursive;
@@ -732,105 +733,106 @@ footer {
 /* =============
     Contact
 ============= */
-#contact article {
-  background-color: #131313; }
-  #contact article h1 {
-    font-family: 'Pirata One', cursive;
-    text-align: center;
-    color: #B11313;
-    font-size: 2.8125rem;
-    padding: 83px 70px 25px; }
-  #contact article div {
-    background-image: url("../img/locationHero.jpg");
-    height: 327px;
-    background-size: cover;
-    margin-bottom: 30px; }
-  #contact article h2 {
-    font-size: 1rem;
-    font-family: 'Barlow', sans-serif;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0; }
-  #contact article #locationButtons {
-    margin-top: 20px;
-    display: grid;
-    grid-template-areas: "button-1" "button-2";
-    grid-gap: 15px; }
-    #contact article #locationButtons p {
-      margin: 10px 60px;
-      font-size: 1.125rem;
-      padding: 5px 35px; }
-    #contact article #locationButtons p:first-child {
-      grid-area: button-1;
-      text-align: center; }
-    #contact article #locationButtons p:last-child {
-      grid-area: button-2;
-      text-align: center; }
-
-#contact #form {
-  background-color: #131313;
-  color: #fff;
-  display: grid;
-  grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". form .";
-  padding: 30px 0; }
-  @media (min-width: 715px) {
-    #contact #form {
-      grid-template-columns: auto 90% auto; } }
-  @media (min-width: 990px) {
-    #contact #form {
-      grid-template-columns: auto 70% auto; } }
-  @media (min-width: 1440px) {
-    #contact #form {
-      grid-template-columns: auto 40% auto; } }
-  #contact #form h1 {
-    text-align: center;
-    font-size: 1.5625rem;
-    font-family: 'Gentium Book Basic', serif;
-    font-weight: 500;
-    padding-bottom: 25px; }
-  #contact #form > div {
-    grid-area: form; }
-    #contact #form > div form {
-      padding: 0 20px;
+#contact {
+  padding-top: 110px; }
+  #contact article {
+    background-color: #131313; }
+    #contact article h1 {
+      font-family: 'Pirata One', cursive;
+      text-align: center;
+      color: #B11313;
+      font-size: 2.8125rem;
+      padding: 83px 70px 25px; }
+    #contact article div {
+      background-image: url("../img/locationHero.jpg");
+      height: 327px;
+      background-size: cover;
+      margin-bottom: 30px; }
+    #contact article h2 {
+      font-size: 1rem;
+      font-family: 'Barlow', sans-serif;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0; }
+    #contact article #locationButtons {
+      margin-top: 20px;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "first first" "email email" "comment comment" "button button";
-      grid-gap: 50px; }
-      #contact #form > div form input {
-        width: 98%;
-        border: none;
-        padding: 1%;
-        height: 30px; }
-      #contact #form > div form textarea {
-        width: 98%;
-        border: none;
-        padding: 1%;
-        height: 200px; }
-      #contact #form > div form div:nth-child(1) {
-        grid-area: first;
-        font-family: 'Barlow', sans-serif;
-        border: #B11313 solid 4px;
-        border-top: none;
-        border-right: none; }
-      #contact #form > div form div:nth-child(2) {
-        grid-area: email;
-        font-family: 'Barlow', sans-serif;
-        border: #B11313 solid 4px;
-        border-top: none;
-        border-right: none; }
-      #contact #form > div form div:nth-child(3) {
-        grid-area: comment;
-        font-family: 'Barlow', sans-serif;
-        border: #B11313 solid 4px; }
-      #contact #form > div form div:nth-child(4) {
-        grid-area: button;
+      grid-template-areas: "button-1" "button-2";
+      grid-gap: 15px; }
+      #contact article #locationButtons p {
+        margin: 10px 60px;
+        font-size: 1.125rem;
+        padding: 5px 35px; }
+      #contact article #locationButtons p:first-child {
+        grid-area: button-1;
         text-align: center; }
-        #contact #form > div form div:nth-child(4) button {
-          color: #fff;
-          background-color: #353535;
-          border: 5px solid #B11313;
-          padding: 7px 55px; }
+      #contact article #locationButtons p:last-child {
+        grid-area: button-2;
+        text-align: center; }
+  #contact #form {
+    background-color: #131313;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". form .";
+    padding: 30px 0; }
+    @media (min-width: 715px) {
+      #contact #form {
+        grid-template-columns: auto 90% auto; } }
+    @media (min-width: 990px) {
+      #contact #form {
+        grid-template-columns: auto 70% auto; } }
+    @media (min-width: 1440px) {
+      #contact #form {
+        grid-template-columns: auto 40% auto; } }
+    #contact #form h1 {
+      text-align: center;
+      font-size: 1.5625rem;
+      font-family: 'Gentium Book Basic', serif;
+      font-weight: 500;
+      padding-bottom: 25px; }
+    #contact #form > div {
+      grid-area: form; }
+      #contact #form > div form {
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "first first" "email email" "comment comment" "button button";
+        grid-gap: 50px; }
+        #contact #form > div form input {
+          width: 98%;
+          border: none;
+          padding: 1%;
+          height: 30px; }
+        #contact #form > div form textarea {
+          width: 98%;
+          border: none;
+          padding: 1%;
+          height: 200px; }
+        #contact #form > div form div:nth-child(1) {
+          grid-area: first;
+          font-family: 'Barlow', sans-serif;
+          border: #B11313 solid 4px;
+          border-top: none;
+          border-right: none; }
+        #contact #form > div form div:nth-child(2) {
+          grid-area: email;
+          font-family: 'Barlow', sans-serif;
+          border: #B11313 solid 4px;
+          border-top: none;
+          border-right: none; }
+        #contact #form > div form div:nth-child(3) {
+          grid-area: comment;
+          font-family: 'Barlow', sans-serif;
+          border: #B11313 solid 4px; }
+        #contact #form > div form div:nth-child(4) {
+          grid-area: button;
+          text-align: center; }
+          #contact #form > div form div:nth-child(4) button {
+            color: #fff;
+            background-color: #353535;
+            border: 5px solid #B11313;
+            padding: 7px 55px; }
 
 /* =============
     Studio
@@ -852,7 +854,8 @@ footer {
       font-family: 'Pirata One', cursive;
       text-align: center;
       color: #B11313;
-      font-size: 2.8125rem; }
+      font-size: 2.8125rem;
+      padding-top: 50px; }
     #studio div .video-wrapper {
       position: relative;
       padding-bottom: 75%;
@@ -883,4 +886,4 @@ footer {
           grid-template-columns: auto 50% auto; } }
       #studio div #video article {
         grid-area: video;
-        padding: 20vh 0; }
+        padding: 3vh 0; }
