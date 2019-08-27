@@ -1,0 +1,35 @@
+/* =============
+    Burger
+============= */
+#burger-container {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    outline: none;
+    position: relative;
+    width: 50px;
+    margin: 10px 5px;
+
+
+    div {
+        background-color: $red;
+        height: 6px;
+        margin-bottom: 20px;
+        position: absolute;
+        width: 100%;
+    }
+
+    div:nth-child(1) {
+        top: 0;
+    }
+
+    div:nth-child(2) {
+        top: 20px;
+    }
+
+    div:nth-child(3) {
+        margin: 0;
+        top: 40px;
+    }
+}

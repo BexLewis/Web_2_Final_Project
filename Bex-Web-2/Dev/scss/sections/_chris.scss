@@ -52,21 +52,39 @@
         "item-1 item-2"
         "item-3 item-3";
         grid-gap:12px;
-        grid-template-rows: 147px 147px;
+        grid-template-rows: 200px 400px;
 
+        li {
+                a {
+                    background-position: center;
+                    background-size: cover;
+                    display: inline-block;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
 
         li:nth-child(1){
             grid-area:item-1;
-            background-image: url("../img/gallery/9.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
+            a{
+            background-image: url("../img/gallery/9.png");
+        }
+
 
         }
         li:nth-child(2){
             grid-area:item-2;
-            background-image: url("../img/gallery/9.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
+            a{
+            background-image: url("../img/gallery/19.jpg");
+        }
+
+
+        }
+        li:nth-child(3){
+            grid-area:item-3;
+            a{
+            background-image: url("../img/gallery/12.jpg");
+        }
 
         }
 

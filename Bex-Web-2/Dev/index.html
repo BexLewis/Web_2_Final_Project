@@ -7,8 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700|Gentium+Book+Basic|Lobster|Pirata+One&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/69a8e8a739.js"></script>
+
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
     <link rel="stylesheet" href="css/styles.css">
     <title>Web 2 Template</title>
 </head>
@@ -16,21 +21,25 @@
 <body>
     <header>
         <section>
-            <button id="burger-icon">
-                <i class="fas fa-bars"></i>
+        <div>
+            <button id="burger-container">
+                <div></div>
+                <div></div>
+                <div></div>
             </button>
-        </section>
-        <nav data-nav="main-navigation">
-            <ul>
-                <li><a href="#about">about</a></li>
-                <li><a href="#mark">Mark Vincent</a></li>
-                <li><a href="#chris">Chris Alexander</a></li>
-                <li><a href="#gallery">Studio</a></li>
-                <li><a href="#contact">Appointments</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        </div>
+    </section>
+    <nav data-nav="main-navigation">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Mark Vincent</a></li>
+            <li><a href="#">Chris Alexander</a></li>
+            <li><a href="#">Studio</a></li>
+            <li><a href="#">Appointments</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
     <section id="about">
         <div>
@@ -53,10 +62,10 @@
                 <p>Iconic Tattoo Co® is owned and operated by Multi Award Winning Tattoo Artist Mark Vincent, home of the area’s top Portrait Artist as well as the most well rounded “Tattooing it all” artist.</p>
 <h3>Portfolio</h3>
             <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><a href="img/gallery/2.jpg" data-fancybox="gallery2"></a></li>
+            <li><a href="img/gallery/13.jpg" data-fancybox="gallery2"></a></li></li>
+            <li><a href="img/gallery/3.jpg" data-fancybox="gallery2"></a></li></li>
+            <li><a href="img/gallery/8.jpg" data-fancybox="gallery2"></a></li></li>
         </ul>
         <article>
         <p class="link-button"><a href="#">SEE MORE <span>WORK</span></a></p>
@@ -72,10 +81,9 @@
                     Traditional, Full Color, Black and Grey, New School, Portrait Tattooing or Photo-realistic, Chris can create a tattoo that looks the way you want and expect it to.</p>
 <h3>Portfolio</h3>
 <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+    <li><a href="img/gallery/9.png" data-fancybox="gallery2"></a></li>
+    <li><a href="img/gallery/19.jpg" data-fancybox="gallery2"></a></li></li>
+    <li><a href="img/gallery/12.jpg" data-fancybox="gallery2"></a></li></li>
             </ul>
             <article>
                 <p class="link-button"><a href="#">SEE MORE <span>WORK</span></a></p>
@@ -86,7 +94,14 @@
     <section id="studio">
         <div>
         <h1>Studio Tour</h1>
-        <div></div>
+        <section class="section-content" id="video">
+                <article>
+                    <!-- i you take this itll work -->
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZnkYTzpB5_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
     </div>
     </section>
 
@@ -139,6 +154,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <!-- FancyBox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     <script src="js/scripts.js"></script>
 </body>
