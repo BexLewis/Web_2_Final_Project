@@ -42,18 +42,19 @@
 
     p{
         text-align: justify;
-        padding: 0 12px;
+        padding: 0 27px;
         color:$white;
         font-size: rem-calc(16);
         line-height: rem-calc(19);
         font-family: 'Barlow', sans-serif;
-
         @include md{
             display: flex;
             align-items: center;
-            padding-right: 100px;
-            line-height: (26);
+            justify-content: center;
+            padding-right: 70px;
+            line-height: rem-calc(26);
             font-size: rem-calc(18);
+            grid-area:text;
         }
     }
 
@@ -62,6 +63,7 @@
         font-family: 'Gentium Book Basic', serif;
         color:$white;
         text-align: center;
+        grid-area:sub;
 
         @include md{
             display: none;
@@ -122,12 +124,15 @@
         margin-left: 60%;
         padding-bottom: 10px;
         padding-right: 10px;
+        grid-area:button;
         p{
             text-align: center;
             padding:7px;
         span{
             display: none;
         }
+
+
     }
     }
 

@@ -533,9 +533,13 @@ footer {
     color: white;
     display: grid;
     grid-template-areas: ". iconic ." ". tattoo .";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.1fr 1fr 1.1fr;
     padding-top: 135px;
     text-align: center; }
+    @media (min-width: 715px) {
+      #about div article {
+        grid-template-areas: ". iconic ." ". tattoo .";
+        grid-template-columns: 1.6fr 1fr 1.6fr; } }
     #about div article h1 {
       font-family: 'Lobster', cursive;
       font-size: 4.6875rem;
@@ -553,7 +557,7 @@ footer {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.1875rem;
-  padding: 23px 25px;
+  padding: 23px 27px;
   text-align: justify; }
 
 /* =============
@@ -617,7 +621,7 @@ footer {
       background-size: cover; }
     #chris div p {
       text-align: justify;
-      padding: 0 12px;
+      padding: 0 27px;
       color: #fff;
       font-size: 1rem;
       line-height: 1.1875rem;
@@ -693,7 +697,7 @@ footer {
           height: 379px; } }
     #mark div p {
       text-align: justify;
-      padding: 0 12px;
+      padding: 0 27px;
       color: #fff;
       font-size: 1rem;
       line-height: 1.1875rem;
@@ -702,14 +706,17 @@ footer {
         #mark div p {
           display: flex;
           align-items: center;
-          padding-right: 100px;
-          line-height: 26;
-          font-size: 1.125rem; } }
+          justify-content: center;
+          padding-right: 70px;
+          line-height: 1.625rem;
+          font-size: 1.125rem;
+          grid-area: text; } }
     #mark div h3 {
       font-size: 1.875rem;
       font-family: 'Gentium Book Basic', serif;
       color: #fff;
-      text-align: center; }
+      text-align: center;
+      grid-area: sub; }
       @media (min-width: 715px) {
         #mark div h3 {
           display: none; } }
@@ -745,7 +752,8 @@ footer {
     #mark div article {
       margin-left: 60%;
       padding-bottom: 10px;
-      padding-right: 10px; }
+      padding-right: 10px;
+      grid-area: button; }
       #mark div article p {
         text-align: center;
         padding: 7px; }

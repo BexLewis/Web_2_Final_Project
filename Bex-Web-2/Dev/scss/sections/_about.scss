@@ -15,9 +15,15 @@
             color: white;
             display: grid;
             grid-template-areas: ". iconic ." ". tattoo .";
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1.1fr 1fr 1.1fr;
             padding-top: 135px;
             text-align: center;
+
+            @include md{
+                grid-template-areas: ". iconic ." ". tattoo .";
+                grid-template-columns: 1.6fr 1fr 1.6fr;
+
+            }
 
 
             h1 {
@@ -35,6 +41,8 @@
                 grid-area: tattoo;
                 text-align: center;
 
+
+
             }
         }
 
@@ -44,7 +52,7 @@
         font-size: rem-calc(16);
         font-weight: 500;
         line-height: rem-calc(19);
-        padding: 23px 25px;
+        padding: 23px 27px;
         text-align: justify;
     }
 }
