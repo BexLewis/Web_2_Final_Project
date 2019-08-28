@@ -19,6 +19,14 @@
     "grid"
     "button";
     grid-gap:18px;
+    @include md{
+        grid-template-areas:
+        "text chris"
+        "grid grid"
+        "button .";
+        grid-template-columns:50% auto;
+        grid-gap:25px;
+    }
 
     div{
         grid-area:chris;
@@ -26,15 +34,31 @@
         background-image: url("../img/chrisHero.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include md{
+            height:415px;
+        }
+
     }
 
     p{
         text-align: justify;
-        padding: 0 27px;
+        padding: 0 47px;
         color:$white;
         font-size: rem-calc(16);
         line-height: rem-calc(19);
         font-family: 'Barlow', sans-serif;
+        grid-area:text;
+
+        @include md{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 70px;
+            line-height: rem-calc(26);
+            font-size: rem-calc(18);
+            grid-area:text;
+        }
     }
 
     h3{
@@ -42,9 +66,13 @@
         font-family: 'Gentium Book Basic', serif;
         color:$white;
         text-align: center;
+        @include md{
+            display: none;
+        }
     }
 
     ul{
+        grid-area:grid;
         padding: 0 12px;
         grid-area:grid;
         display: grid;
@@ -53,6 +81,14 @@
         "item-3 item-3";
         grid-gap:12px;
         grid-template-rows: 200px 400px;
+
+        @include md{
+            grid-template-areas:
+            "item-4 item-3 item-5";
+            grid-template-columns: 1fr 1.5fr 1fr;
+            grid-template-rows: 302px;
+
+        }
 
         li {
                 a {
@@ -69,6 +105,9 @@
             a{
             background-image: url("../img/gallery/9.png");
         }
+        @include md{
+            display: none;
+        }
 
 
         }
@@ -76,6 +115,9 @@
             grid-area:item-2;
             a{
             background-image: url("../img/gallery/19.jpg");
+        }
+        @include md{
+            display: none;
         }
 
 
@@ -87,13 +129,37 @@
         }
 
         }
+        li:nth-child(4){
+            grid-area:item-4;
+            a{
+            background-image: url("../img/gallery/11.jpg");
+        }
+        display:none;
+        @include md{
+            display: block;
+        }
+
+        }
+        li:nth-child(5){
+            grid-area:item-5;
+            a{
+            background-image: url("../img/gallery/14.jpg");
+        }
+        display:none;
+        @include md{
+            display: block;
+        }
+
+        }
+
 
     }
 
     article{
-        padding-left:60%;
+        grid-area:button;
+        padding-right:60%;
         padding-bottom: 10px;
-        padding-right: 10px;
+        padding-left: 10px;
         p{
             text-align: center;
             padding:7px;

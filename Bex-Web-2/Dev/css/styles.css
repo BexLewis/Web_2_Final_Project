@@ -613,31 +613,58 @@ footer {
     display: grid;
     grid-template-areas: "chris" "text" "sub" "grid" "button";
     grid-gap: 18px; }
+    @media (min-width: 715px) {
+      #chris div {
+        grid-template-areas: "text chris" "grid grid" "button .";
+        grid-template-columns: 50% auto;
+        grid-gap: 25px; } }
     #chris div div {
       grid-area: chris;
       height: 245px;
       background-image: url("../img/chrisHero.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
+      @media (min-width: 715px) {
+        #chris div div {
+          height: 415px; } }
     #chris div p {
       text-align: justify;
-      padding: 0 27px;
+      padding: 0 47px;
       color: #fff;
       font-size: 1rem;
       line-height: 1.1875rem;
-      font-family: 'Barlow', sans-serif; }
+      font-family: 'Barlow', sans-serif;
+      grid-area: text; }
+      @media (min-width: 715px) {
+        #chris div p {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-left: 70px;
+          line-height: 1.625rem;
+          font-size: 1.125rem;
+          grid-area: text; } }
     #chris div h3 {
       font-size: 1.875rem;
       font-family: 'Gentium Book Basic', serif;
       color: #fff;
       text-align: center; }
+      @media (min-width: 715px) {
+        #chris div h3 {
+          display: none; } }
     #chris div ul {
+      grid-area: grid;
       padding: 0 12px;
       grid-area: grid;
       display: grid;
       grid-template-areas: "item-1 item-2" "item-3 item-3";
       grid-gap: 12px;
       grid-template-rows: 200px 400px; }
+      @media (min-width: 715px) {
+        #chris div ul {
+          grid-template-areas: "item-4 item-3 item-5";
+          grid-template-columns: 1fr 1.5fr 1fr;
+          grid-template-rows: 302px; } }
       #chris div ul li a {
         background-position: center;
         background-size: cover;
@@ -648,18 +675,41 @@ footer {
         grid-area: item-1; }
         #chris div ul li:nth-child(1) a {
           background-image: url("../img/gallery/9.png"); }
+        @media (min-width: 715px) {
+          #chris div ul li:nth-child(1) {
+            display: none; } }
       #chris div ul li:nth-child(2) {
         grid-area: item-2; }
         #chris div ul li:nth-child(2) a {
           background-image: url("../img/gallery/19.jpg"); }
+        @media (min-width: 715px) {
+          #chris div ul li:nth-child(2) {
+            display: none; } }
       #chris div ul li:nth-child(3) {
         grid-area: item-3; }
         #chris div ul li:nth-child(3) a {
           background-image: url("../img/gallery/12.jpg"); }
+      #chris div ul li:nth-child(4) {
+        grid-area: item-4;
+        display: none; }
+        #chris div ul li:nth-child(4) a {
+          background-image: url("../img/gallery/11.jpg"); }
+        @media (min-width: 715px) {
+          #chris div ul li:nth-child(4) {
+            display: block; } }
+      #chris div ul li:nth-child(5) {
+        grid-area: item-5;
+        display: none; }
+        #chris div ul li:nth-child(5) a {
+          background-image: url("../img/gallery/14.jpg"); }
+        @media (min-width: 715px) {
+          #chris div ul li:nth-child(5) {
+            display: block; } }
     #chris div article {
-      padding-left: 60%;
+      grid-area: button;
+      padding-right: 60%;
       padding-bottom: 10px;
-      padding-right: 10px; }
+      padding-left: 10px; }
       #chris div article p {
         text-align: center;
         padding: 7px; }
@@ -686,6 +736,13 @@ footer {
         grid-template-areas: "mark text" "grid grid" ". button";
         grid-template-columns: 50% auto;
         grid-gap: 50px; } }
+    @media (min-width: 990px) {
+      #mark div {
+        padding: 50px;
+        grid-template-areas: ". grid" "mark grid" "text grid" "button grid" ". grid";
+        grid-template-columns: 50% auto;
+        grid-gap: 50px;
+        grid-template-rows: 73px 397px 97px 54px 72px; } }
     #mark div div {
       grid-area: mark;
       height: 245px;
@@ -695,6 +752,10 @@ footer {
       @media (min-width: 715px) {
         #mark div div {
           height: 379px; } }
+      @media (min-width: 990px) {
+        #mark div div {
+          background-position: -340px 0;
+          height: 100%; } }
     #mark div p {
       text-align: justify;
       padding: 0 27px;
@@ -727,6 +788,16 @@ footer {
       grid-template-areas: "item-1 item-2" "item-1 item-3" "item-4 item-4";
       grid-gap: 12px;
       grid-template-rows: 147px 147px 243px; }
+      @media (min-width: 715px) {
+        #mark div ul {
+          grid-template-areas: "item-2 item-4 item-4 item-5" "item-3 item-4 item-4 item-5";
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 175px 175px; } }
+      @media (min-width: 990px) {
+        #mark div ul {
+          grid-template-areas: "item-4 item-4" "item-4 item-4" "item-2 item-5" "item-3 item-5";
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          grid-template-columns: 50% auto; } }
       #mark div ul li a {
         background-position: center;
         background-size: cover;
@@ -737,6 +808,9 @@ footer {
         grid-area: item-1; }
         #mark div ul li:nth-child(1) a {
           background-image: url("../img/gallery/2.jpg"); }
+        @media (min-width: 715px) {
+          #mark div ul li:nth-child(1) {
+            display: none; } }
       #mark div ul li:nth-child(2) {
         grid-area: item-2; }
         #mark div ul li:nth-child(2) a {
@@ -749,6 +823,14 @@ footer {
         grid-area: item-4; }
         #mark div ul li:nth-child(4) a {
           background-image: url("../img/gallery/8.jpg"); }
+      #mark div ul li:nth-child(5) {
+        grid-area: item-5;
+        display: none; }
+        #mark div ul li:nth-child(5) a {
+          background-image: url("../img/gallery/18.jpg"); }
+        @media (min-width: 715px) {
+          #mark div ul li:nth-child(5) {
+            display: inline-block; } }
     #mark div article {
       margin-left: 60%;
       padding-bottom: 10px;

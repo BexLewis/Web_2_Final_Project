@@ -28,6 +28,20 @@
         grid-gap:50px;
     }
 
+    @include lg{
+        padding:50px;
+        grid-template-areas:
+        ". grid"
+        "mark grid"
+        "text grid"
+        "button grid"
+        ". grid";
+        grid-template-columns:50% auto;
+        grid-gap:50px;
+        grid-template-rows: 73px 397px 97px 54px 72px;
+
+    }
+
 
     div{
         grid-area:mark;
@@ -37,6 +51,10 @@
         background-size: cover;
         @include md{
             height: 379px;
+        }
+        @include lg{
+            background-position: -340px 0;
+            height:100%;
         }
     }
 
@@ -68,6 +86,7 @@
         @include md{
             display: none;
         }
+
     }
 
     ul{
@@ -80,6 +99,25 @@
         "item-4 item-4";
         grid-gap:12px;
         grid-template-rows: 147px 147px 243px;
+        @include md{
+            grid-template-areas:
+            "item-2 item-4 item-4 item-5"
+            "item-3 item-4 item-4 item-5";
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            grid-template-rows: 175px 175px;
+
+        }
+        @include lg{
+            grid-template-areas:
+            "item-4 item-4"
+            "item-4 item-4"
+            "item-2 item-5"
+            "item-3 item-5";
+            grid-template-rows:1fr 1fr 1fr 1fr;
+            grid-template-columns: 50% auto;
+
+        }
+
         li {
                 a {
                     background-position: center;
@@ -94,7 +132,12 @@
             grid-area:item-1;
             a {
                     background-image: url("../img/gallery/2.jpg");
+
                 }
+                @include md{
+                    display: none;
+                }
+
 
         }
         li:nth-child(2){
@@ -116,6 +159,17 @@
             a{
             background-image: url("../img/gallery/8.jpg");
         }
+        }
+        li:nth-child(5){
+            grid-area:item-5;
+            display: none;
+            a{
+            background-image: url("../img/gallery/18.jpg");
+        }
+        @include md{
+            display: inline-block;
+        }
+
         }
 
     }
