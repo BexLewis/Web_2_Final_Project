@@ -36,16 +36,16 @@ div{
     margin-bottom: 30px;
 
     @include md{
-        padding: 0 70px;
+        margin: 0 70px;
     }
 
     @include lg{
         height:424px;
-        padding: 0 90px;
+        margin: 0 90px;
     }
     @include xl{
         height:591px;
-        padding: 0 173px;
+        margin: 0 173px;
     }
 }
 
