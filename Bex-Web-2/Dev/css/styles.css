@@ -1271,12 +1271,17 @@ form .button {
     height: 327px;
     background-size: cover;
     margin-bottom: 30px; }
+    @media (min-width: 715px) {
+      #contact article div {
+        padding: 0 70px; } }
     @media (min-width: 990px) {
       #contact article div {
-        height: 424px; } }
+        height: 424px;
+        padding: 0 90px; } }
     @media (min-width: 1440px) {
       #contact article div {
-        height: 591px; } }
+        height: 591px;
+        padding: 0 173px; } }
   #contact article h2 {
     font-size: 1rem;
     font-family: 'Barlow', sans-serif;
