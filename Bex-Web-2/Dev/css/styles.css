@@ -618,6 +618,13 @@ footer {
         grid-template-areas: "text chris" "grid grid" "button .";
         grid-template-columns: 50% auto;
         grid-gap: 25px; } }
+    @media (min-width: 990px) {
+      #chris div {
+        padding: 50px;
+        grid-template-areas: ". grid" "chris grid" "text grid" "button grid" ". grid";
+        grid-template-columns: 50% auto;
+        grid-gap: 50px;
+        grid-template-rows: repeat(1fr, 4); } }
     #chris div div {
       grid-area: chris;
       height: 245px;
@@ -644,6 +651,9 @@ footer {
           line-height: 1.625rem;
           font-size: 1.125rem;
           grid-area: text; } }
+      @media (min-width: 990px) {
+        #chris div p {
+          padding: 0; } }
     #chris div h3 {
       font-size: 1.875rem;
       font-family: 'Gentium Book Basic', serif;
@@ -665,6 +675,11 @@ footer {
           grid-template-areas: "item-4 item-3 item-5";
           grid-template-columns: 1fr 1.5fr 1fr;
           grid-template-rows: 302px; } }
+      @media (min-width: 990px) {
+        #chris div ul {
+          grid-template-areas: "item-4 item-5" "item-3 item-3" "item-6 item-6";
+          grid-template-columns: 50% auto;
+          grid-template-rows: 300px 350px 230px; } }
       #chris div ul li a {
         background-position: center;
         background-size: cover;
@@ -705,6 +720,14 @@ footer {
         @media (min-width: 715px) {
           #chris div ul li:nth-child(5) {
             display: block; } }
+      #chris div ul li:nth-child(6) {
+        grid-area: item-6;
+        display: none; }
+        #chris div ul li:nth-child(6) a {
+          background-image: url("../img/gallery/4.jpg"); }
+        @media (min-width: 990px) {
+          #chris div ul li:nth-child(6) {
+            display: block; } }
     #chris div article {
       grid-area: button;
       padding-right: 60%;
@@ -715,6 +738,10 @@ footer {
         padding: 7px; }
         #chris div article p span {
           display: none; }
+      @media (min-width: 990px) {
+        #chris div article {
+          padding: 0 20%;
+          text-align: center; } }
 
 /* =============
     Mark
@@ -742,7 +769,12 @@ footer {
         grid-template-areas: ". grid" "mark grid" "text grid" "button grid" ". grid";
         grid-template-columns: 50% auto;
         grid-gap: 50px;
-        grid-template-rows: 73px 397px 97px 54px 72px; } }
+        grid-template-rows: repeat(1fr, 5); } }
+    @media (min-width: 1440px) {
+      #mark div {
+        grid-template-areas: ". grid" ". grid" ". grid" "mark grid" "text grid" "button grid" ". grid" ". grid" ". grid";
+        grid-template-rows: repeat(1fr, 7);
+        padding: 180px 90px; } }
     #mark div div {
       grid-area: mark;
       height: 245px;
@@ -754,8 +786,11 @@ footer {
           height: 379px; } }
       @media (min-width: 990px) {
         #mark div div {
-          background-position: -340px 0;
-          height: 100%; } }
+          height: 397px;
+          background-position: center; } }
+      @media (min-width: 1440px) {
+        #mark div div {
+          height: 490px; } }
     #mark div p {
       text-align: justify;
       padding: 0 27px;
@@ -772,6 +807,9 @@ footer {
           line-height: 1.625rem;
           font-size: 1.125rem;
           grid-area: text; } }
+      @media (min-width: 990px) {
+        #mark div p {
+          padding: 0; } }
     #mark div h3 {
       font-size: 1.875rem;
       font-family: 'Gentium Book Basic', serif;
@@ -798,6 +836,11 @@ footer {
           grid-template-areas: "item-4 item-4" "item-4 item-4" "item-2 item-5" "item-3 item-5";
           grid-template-rows: 1fr 1fr 1fr 1fr;
           grid-template-columns: 50% auto; } }
+      @media (min-width: 1440px) {
+        #mark div ul {
+          grid-template-areas: "item-2 item-4" "item-4 item-5";
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr; } }
       #mark div ul li a {
         background-position: center;
         background-size: cover;
@@ -811,6 +854,9 @@ footer {
         @media (min-width: 715px) {
           #mark div ul li:nth-child(1) {
             display: none; } }
+        @media (min-width: 1440px) {
+          #mark div ul li:nth-child(1) {
+            display: block; } }
       #mark div ul li:nth-child(2) {
         grid-area: item-2; }
         #mark div ul li:nth-child(2) a {
@@ -836,6 +882,10 @@ footer {
       padding-bottom: 10px;
       padding-right: 10px;
       grid-area: button; }
+      @media (min-width: 990px) {
+        #mark div article {
+          margin: 0;
+          padding: 0 20%; } }
       #mark div article p {
         text-align: center;
         padding: 7px; }
