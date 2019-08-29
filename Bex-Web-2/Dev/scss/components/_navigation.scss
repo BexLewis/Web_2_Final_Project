@@ -4,7 +4,7 @@
 header {
 
     nav {
-    
+
         font-family: 'Gentium Book Basic', serif;
         font-size: rem-calc(23);
 
@@ -30,7 +30,8 @@ header {
             @include lg {
                 display: flex;
                 justify-content: flex-start;
-                margin: 10px;
+                margin: 30px 0px;
+
 
             }
 
@@ -39,9 +40,18 @@ header {
                 color:$white;
                 padding: 10px 0;
                 @include lg{
-                padding:0 10px;
-
+                padding:0 40px;
                 border-right: 2px solid $white;
+                display: flex;
+                align-items: center;
+
+                a{
+                    span{
+                        @include lg{
+                            display: none;
+                        }
+                    }
+                }
 
             }
 

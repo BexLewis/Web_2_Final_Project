@@ -10,15 +10,29 @@ footer {
 
 
 
-
     ul {
         align-items: center;
         display: flex;
         justify-content: space-between;
 
         padding: 15px 70px;
+        @include md{
+            padding: 15px;
+            justify-content: flex-start;
+        }
+        @include lg{
+            padding: 15px;
+            justify-content: flex-start;
+        }
+        @include xl{
+            padding: 15px;
+            justify-content: flex-start;
+        }
 
         li {
+            @include md{
+                padding: 0 30px;
+            }
 
             i {
                 color: $white;

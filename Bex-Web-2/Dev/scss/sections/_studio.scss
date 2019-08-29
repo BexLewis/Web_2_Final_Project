@@ -3,6 +3,13 @@
 ============= */
 #studio{
         padding-top: 130px;
+        @include md{
+            padding-top: 234px;
+        }
+        @include xl{
+            padding-top: 270px;
+        }
+
         div{
             background-color: $blackbg;
     h1{
@@ -11,6 +18,15 @@
         color:$red;
         font-size: rem-calc(45);
         padding-top: 50px;
+        @include md{
+            font-size: rem-calc(70);
+        }
+        @include lg{
+            font-size: rem-calc(90);
+        }
+        @include xl{
+            font-size: rem-calc(120);
+        }
     }
 
 
@@ -56,15 +72,16 @@
 
 
     @include md{
-        grid-template-columns: auto 70% auto;
+        grid-template-columns: .1% auto .1%;
     }
 
     @include lg{
-        grid-template-columns: auto 60% auto;
+        grid-template-columns: 5% auto 5%;
     }
 
     @include xl{
-        grid-template-columns: auto 50% auto;
+        grid-template-areas: ". video .";
+        grid-template-columns: 10% auto 10%;
     }
 
     article{

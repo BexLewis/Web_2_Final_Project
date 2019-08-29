@@ -32,8 +32,8 @@
     <nav data-nav="main-navigation">
         <ul>
             <li><a href="#">ABOUT</a></li>
-            <li><a href="#">MARK VINCENT</a></li>
-            <li><a href="#">CHRIS ALEXANDER</a></li>
+            <li><a href="#">MARK <span>VINCENT</span></a></li>
+            <li><a href="#">CHRIS <span>ALEXANDER</span></a></li>
             <li><a href="#">STUDIO</a></li>
             <li><a href="#">APPOINTMENTS</a></li>
             <li><a href="#">CONTACT</a></li>
@@ -67,6 +67,7 @@
             <li><a href="img/gallery/13.jpg" data-fancybox="gallery2"></a></li></li>
             <li><a href="img/gallery/3.jpg" data-fancybox="gallery2"></a></li></li>
             <li><a href="img/gallery/8.jpg" data-fancybox="gallery2"></a></li></li>
+            <li><a href="img/gallery/18.jpg" data-fancybox="gallery2"></a></li></li>
             <li><a href="img/gallery/18.jpg" data-fancybox="gallery2"></a></li></li>
         </ul>
         <article>
@@ -111,6 +112,7 @@
 
     <section id="appointments">
         <h1>Appointments</h1>
+
         <div>
             <p>We encourage everyone to stop in and say hello, take a look around our shop and check out our work, see what everyone is talking about;) Walk-ins are welcome but we cant always fit you in. If we are unable to fit your tattoo in that
                 day then we will have a consultation right then and there and schedule your appointment along with a small deposit (all deposits go directly towards the cost of the tattoo).</p>
@@ -138,8 +140,34 @@
         <p class="link-button"><a href="">CONTACT</a></p>
     </section>
     </article>
+
 <!-- Form -->
-        <section id="form">
+
+
+                <!-- <section class="content">
+                    <input type="hidden" name="_next" value="http://www.bexlewisdesign.com/web2/final/thanks.html" />
+    				<h2>Kuro</h2>
+    				<span class="input input--kuro">
+    					<input class="input__field input__field--kuro" type="text" id="input-7" />
+    					<label class="input__label input__label--kuro" for="input-7">
+    						<span class="input__label-content input__label-content--kuro">Username</span>
+    					</label>
+    				</span>
+    				<span class="input input--kuro">
+    					<input class="input__field input__field--kuro" type="text" id="input-8" />
+    					<label class="input__label input__label--kuro" for="input-8">
+    						<span class="input__label-content input__label-content--kuro">Website</span>
+    					</label>
+    				</span>
+    				<span class="input input--kuro">
+    					<input class="input__field input__field--kuro" type="text" id="input-9" />
+    					<label class="input__label input__label--kuro" for="input-9">
+    						<span class="input__label-content input__label-content--kuro">Invitation Code</span>
+    					</label>
+    				</span>
+    			</section> -->
+
+<section id="form">
                 <div>
                     <h1>Contact Form</h1>
                     <div class="divide"></div>
@@ -155,13 +183,13 @@
                             </label>
                         </div>
                         <!-- email -->
-                        <div>
+                         <div>
                             <label>
                                 <input type="email" placeholder="Email" name="Email" required>
                             </label>
                         </div>
                         <!-- comment -->
-                        <div>
+                    <div>
                             <label>
                                 <textarea placeholder="Comment" name="Comment"></textarea>
                             </label>
@@ -172,8 +200,9 @@
                     </form>
                 </div>
             </section>
+            </section>
 
-    </section>
+
 
     <footer>
             <ul>
@@ -193,6 +222,46 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     <script src="js/scripts.js"></script>
+<!-- Form Stuff -->
+    <!-- Make sure you all code from lines 63 - 99. Make sure you also add the classie.js file to your js folder, as seen on line 58 -->
+<script src="js/classie.js"></script>
+
+<script>
+    (function() {
+        // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+        if (!String.prototype.trim) {
+            (function() {
+                // Make sure we trim BOM and NBSP
+                var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                String.prototype.trim = function() {
+                    return this.replace(rtrim, '');
+                };
+            })();
+        }
+
+        [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+            // in case the input is already filled..
+            if( inputEl.value.trim() !== '' ) {
+                classie.add( inputEl.parentNode, 'input--filled' );
+            }
+
+            // events:
+            inputEl.addEventListener( 'focus', onInputFocus );
+            inputEl.addEventListener( 'blur', onInputBlur );
+        } );
+
+        function onInputFocus( ev ) {
+            classie.add( ev.target.parentNode, 'input--filled' );
+        }
+
+        function onInputBlur( ev ) {
+            if( ev.target.value.trim() === '' ) {
+                classie.remove( ev.target.parentNode, 'input--filled' );
+            }
+        }
+    })();
+</script>
+
 </body>
 
 </html>

@@ -5,14 +5,41 @@
     background-color: $blackbg;
     text-align: center;
     padding-top: 110px;
+    @include md{
+        padding: 110px 90px 0;
+    }
+    @include lg{
+        padding: 234px 70px 0;
+    }
+    @include lg{
+        padding: 270px 250px 0;
+    }
     h1{
         color:$red;
         font-family: 'Pirata One', cursive;
         font-size: rem-calc(45);
         padding-bottom:30px;
+        @include md{
+            font-size: rem-calc(70);
+        }
+        @include lg{
+            font-size: rem-calc(90);
+        }
+        @include xl{
+            font-size: rem-calc(120);
+        }
     }
 div{
     padding: 0 27px;
+    @include md{
+        padding: 0 40px;
+    }
+    @include lg{
+        padding: 0 50px;
+    }
+    @include xl{
+        padding: 22px 140px;
+    }
         background-color: $lightgray;
         font-family: 'Barlow', sans-serif;
         text-align: justify;
@@ -27,6 +54,9 @@ div{
 
         p:nth-child(3){
             display: none;
+            @include md{
+                display: inline-block;
+            }
         }
 
         a:link,

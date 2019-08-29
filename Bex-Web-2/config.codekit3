@@ -20,6 +20,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/Dev/css/minoruForm.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/Dev/css/minoruForm-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/Dev/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -29,28 +39,6 @@
 		"oAP": "/Dev/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"/Dev/img/aboutHero.jpg": {
-		"ft": 16384,
-		"iS": 30064,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/Dev/img/aboutHero.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/Dev/img/chrisHero.jpg": {
-		"ft": 16384,
-		"iS": 45002,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/Dev/img/chrisHero.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
 		},
 	"/Dev/img/gallery/1.jpg": {
 		"ft": 16384,
@@ -272,28 +260,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/Dev/img/locationHero.jpg": {
-		"ft": 16384,
-		"iS": 476585,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/Dev/img/locationHero.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/Dev/img/markHero.jpg": {
-		"ft": 16384,
-		"iS": 282609,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/Dev/img/markHero.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"/Dev/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -301,6 +267,17 @@
 		"oA": 0,
 		"oAP": "/Dev/index.html",
 		"oF": 0
+		},
+	"/Dev/js/classie.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/Dev/js/classie-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/Dev/js/scripts-min.js": {
 		"bF": 0,
@@ -519,6 +496,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/Dev/scss/sections/_genForm.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/Dev/scss/sections/_genForm.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/Dev/scss/sections/_mark.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -528,6 +518,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/Dev/scss/sections/_mark.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/Dev/scss/sections/_minoruForm.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/Dev/scss/sections/_minoruForm.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

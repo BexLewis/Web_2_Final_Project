@@ -3,8 +3,15 @@
 ============= */
 #contact{
     article{
+
         padding-top: 110px;
 background-color: $blackbg;
+@include md{
+    padding-top: 234px;
+}
+@include xl{
+    padding-top: 270px;
+}
 
 h1{
     font-family: 'Pirata One', cursive;
@@ -12,12 +19,28 @@ h1{
     color:$red;
     font-size: rem-calc(45);
     padding: 83px 70px 25px;
+    @include md{
+        font-size: rem-calc(70);
+    }
+    @include lg{
+        font-size: rem-calc(90);
+    }
+    @include xl{
+        font-size: rem-calc(120);
+    }
 }
 div{
     background-image: url("../img/locationHero.jpg");
     height:327px;
     background-size: cover;
     margin-bottom: 30px;
+
+    @include lg{
+        height:424px;
+    }
+    @include xl{
+        height:591px;
+    }
 }
 
 h2{
@@ -33,18 +56,35 @@ h2{
     display: grid;
     grid-template-areas:"button-1" "button-2";
     grid-gap:15px;
+    @include sm{
+        padding: 0 10%;
+    }
+    @include md{
+        grid-template-areas:"button-1 button-2";
+        padding: 0;
+
+    }
+    @include lg{
+        grid-gap:30px;
+        padding: 0 20%;
+
+    }
+
     p{
         margin:10px 60px;
         font-size:rem-calc(18);
         padding: 5px 35px;
+
     }
     p:first-child{
         grid-area:button-1;
         text-align: center;
+        padding: 5px 50px;
     }
     p:last-child{
         grid-area:button-2;
         text-align: center;
+
 
     }
 }
@@ -58,6 +98,9 @@ h2{
 	grid-template-columns: 10px auto 10px;
 	grid-template-areas: ". form .";
 	padding: 30px 0;
+    @include md{
+    padding: 30px 132px;
+    }
 	@include md {
 		grid-template-columns: auto 90% auto;
 	}
