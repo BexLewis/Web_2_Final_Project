@@ -1,0 +1,105 @@
+/* =============
+    Appointments
+============= */
+#appointments{
+    margin-top: 110px;
+    @include md{
+        margin-top: 234px;
+    }
+    @include xl{
+        margin-top: 270px;
+    }
+    section{
+        section{
+
+    text-align: center;
+    padding-bottom: 130px;
+
+    @include md{
+        padding: 0px 70px 130px;
+    }
+    @include lg{
+        padding: 0px 70px 230px;
+    }
+    @include lg{
+        padding: 0px 150px 270px;
+    }
+    h1{
+        background-color: $blackbg;
+        color:$red;
+        font-family: 'Pirata One', cursive;
+        font-size: rem-calc(70);
+        padding-top:30px;
+        
+        @include md{
+            font-size: rem-calc(80);
+        }
+        @include lg{
+            font-size: rem-calc(90);
+        }
+        @include xl{
+            font-size: rem-calc(120);
+        }
+    }
+div{
+    padding: 0 27px 10px;
+    @include md{
+        padding: 0 40px 20px;
+    }
+    @include lg{
+        padding: 0 80px 20px;
+    }
+    @include xl{
+        padding: 22px 180px 20px;
+    }
+        background-color: $blackbg;
+        font-family: 'Barlow', sans-serif;
+        text-align: justify;
+
+        h2{
+            font-size: rem-calc(30);
+            font-family: 'Gentium Book Basic', serif;
+            color:$white;
+            text-align: center;
+        }
+        p{
+            padding: 27px 0;
+            color:$white;
+        }
+
+        p:nth-child(3){
+            display: none;
+            @include md{
+                display: inline-block;
+            }
+        }
+        p:nth-child(5){
+            padding: 10px;
+            margin: 10px 90px;
+            @include md{
+                margin: 10px 20%;
+            }
+            @include lg{
+                margin: 10px 20%;
+            }
+        }
+
+        a:link,
+        a:visited {
+            font-family: 'Gentium Book Basic', serif;
+            color:$white;
+            text-decoration: none;
+            transition: 0.25s;
+            text-align: center;
+            display: block;
+            font-weight:500;
+
+        }
+        a:hover, a:active{
+            color:$red;
+
+        }
+    }
+}
+}
+}

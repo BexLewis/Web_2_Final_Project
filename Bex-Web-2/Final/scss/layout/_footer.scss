@@ -1,0 +1,46 @@
+/* =============
+    Footer
+============= */
+/* =============
+    Footer
+============= */
+footer {
+    background-color: $gray;
+    height: 90px;
+
+
+
+    ul {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 70px;
+        @include md{
+            padding: 15px;
+            justify-content: flex-start;
+        }
+        @include lg{
+            padding: 15px;
+            justify-content: flex-start;
+        }
+        @include xl{
+            padding: 15px;
+            justify-content: flex-start;
+        }
+
+        li {
+            @include md{
+                padding: 10px 30px;
+            }
+
+            i {
+                color: $white;
+                font-size: rem-calc(40);
+
+            }
+
+
+        }
+    }
+}

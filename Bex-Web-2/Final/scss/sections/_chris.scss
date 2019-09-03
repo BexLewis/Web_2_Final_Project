@@ -1,0 +1,261 @@
+/* =============
+    Chris
+============= */
+#chris{
+    margin-top: 110px;
+    @include md{
+        margin-top: 234px;
+    }
+    @include xl{
+        margin-top: 270px;
+    }
+    h1{
+        font-family: 'Pirata One', cursive;
+        text-align: center;
+        color:$red;
+        background-color: $blackbg;
+        padding: 40px 0 10px;
+        font-size: rem-calc(70);
+        @include md{
+            font-size: rem-calc(80);
+        }
+        @include lg{
+            font-size: rem-calc(90);
+        }
+        @include xl{
+            font-size: rem-calc(120);
+        }
+    }
+    div{
+    background-color: $blackbg;
+    display: grid;
+    grid-template-areas:
+    "chris"
+    "text"
+    "sub"
+    "grid"
+    "button";
+    grid-gap:18px;
+    @include md{
+        grid-template-areas:
+        "text chris"
+        "grid grid"
+        "button .";
+        grid-template-columns:50% auto;
+        grid-gap:25px;
+    }
+    @include lg{
+        padding:50px;
+        grid-template-areas:
+        "grid ."
+        "grid chris "
+        "grid text "
+        "grid button "
+        "grid .";
+        grid-template-columns:50% auto;
+        grid-gap:50px;
+        grid-template-rows: repeat(1fr, 4)
+    }
+    @include xl{
+        grid-template-areas:
+        "grid ."
+        "grid chris "
+        "grid text "
+        "grid button "
+        "grid .";
+        grid-gap:80px;
+        padding: 180px 90px;
+        grid-template-columns:2fr 1fr;
+
+    }
+
+    div{
+        grid-area:chris;
+        height: 245px;
+        background-image: url("../img/chrisHero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include md{
+            height:415px;
+        }
+
+        @include xl{
+            height:360px;
+            background-position: -300px 0;
+        }
+
+    }
+
+    p{
+        text-align: justify;
+        padding: 0 47px;
+        color:$white;
+        font-size: rem-calc(16);
+        line-height: rem-calc(19);
+        font-family: 'Barlow', sans-serif;
+        grid-area:text;
+
+        @include md{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 70px;
+            line-height: rem-calc(26);
+            font-size: rem-calc(18);
+            grid-area:text;
+        }
+
+        @include lg{
+            padding: 0;
+        }
+    }
+
+    h3{
+        font-size: rem-calc(30);
+        font-family: 'Gentium Book Basic', serif;
+        color:$white;
+        text-align: center;
+        @include md{
+            display: none;
+        }
+    }
+
+    ul{
+        grid-area:grid;
+        padding: 0 12px;
+        grid-area:grid;
+        display: grid;
+        grid-template-areas:
+        "item-1 item-2"
+        "item-3 item-3";
+        grid-gap:12px;
+        grid-template-rows: 200px 400px;
+
+        @include md{
+            grid-template-areas:
+            "item-4 item-3 item-5";
+            grid-template-columns: 1fr 1.5fr 1fr;
+            grid-template-rows: 302px;
+
+        }
+        @include lg{
+            grid-template-areas:
+            "item-4 item-5"
+            "item-3 item-3"
+            "item-6 item-6";
+            grid-template-columns:50% auto;
+            grid-template-rows:300px 350px 230px;
+        }
+
+        @include xl{
+            grid-template-areas:
+            "item-6 item-6 item-4 item-5"
+            "item-3 item-3 item-4 item-5"
+            "item-3 item-3 item-2 item-2"
+            "item-3 item-3 item-2 item-2";
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            grid-template-rows:1fr 1fr 1fr 2fr;
+            padding: 0;
+        }
+
+        li {
+                a {
+                    background-position: center;
+                    background-size: cover;
+                    display: inline-block;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+        li:nth-child(1){
+            grid-area:item-1;
+            a{
+            background-image: url("../img/gallery/9.png");
+        }
+        @include md{
+            display: none;
+        }
+
+
+        }
+        li:nth-child(2){
+            grid-area:item-2;
+            a{
+            background-image: url("../img/gallery/19.jpg");
+        }
+        @include md{
+            display: none;
+        }
+        @include xl{
+            display: inline-block;
+        }
+
+
+        }
+        li:nth-child(3){
+            grid-area:item-3;
+            a{
+            background-image: url("../img/gallery/12.jpg");
+        }
+
+        }
+        li:nth-child(4){
+            grid-area:item-4;
+            a{
+            background-image: url("../img/gallery/11.jpg");
+        }
+        display:none;
+        @include md{
+            display: block;
+        }
+
+        }
+        li:nth-child(5){
+            grid-area:item-5;
+            a{
+            background-image: url("../img/gallery/14.jpg");
+        }
+        display:none;
+        @include md{
+            display: block;
+        }
+
+        }
+        li:nth-child(6){
+            grid-area:item-6;
+            a{
+            background-image: url("../img/gallery/4.jpg");
+        }
+        display:none;
+
+        @include lg{
+        display:block;
+        }
+
+        }
+
+
+    }
+
+    article{
+        grid-area:button;
+        padding-right:60%;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        p{
+            text-align: center;
+            padding:7px;
+        span{
+            display: none;
+        }
+    }
+    @include lg{
+        padding: 0 20%;
+        text-align: center;
+    }
+    }
+
+}
+}

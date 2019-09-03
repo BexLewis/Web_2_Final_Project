@@ -1,0 +1,155 @@
+/* =============
+    Contact
+============= */
+#contact{
+    article{
+background-color: $blackbg;
+
+
+h1{
+    font-family: 'Pirata One', cursive;
+    text-align: center;
+    color:$red;
+    font-size: rem-calc(70);
+    padding: 40px 70px 10px;
+    @include md{
+        font-size: rem-calc(80);
+    }
+    @include lg{
+        font-size: rem-calc(90);
+    }
+    @include xl{
+        font-size: rem-calc(120);
+    }
+}
+div{
+    background-image: url("../img/locationHero.jpg");
+    height:327px;
+    background-size: cover;
+
+
+    @include md{
+        margin: 0px 70px;
+    }
+
+    @include lg{
+        height:424px;
+        margin: 0px 90px;
+    }
+    @include xl{
+        height:591px;
+        margin: 0px 173px;
+    }
+}
+
+
+
+}
+#form {
+	background-color:$blackbg;
+    color:$white;
+	display: grid;
+	grid-template-columns: 10px auto 10px;
+	grid-template-areas: ". form .";
+	padding: 50px 0;
+    @include md{
+    padding: 30px 132px;
+    }
+	@include md {
+		grid-template-columns: auto 90% auto;
+	}
+	@include lg {
+		grid-template-columns: auto 70% auto;
+	}
+	@include xl {
+		grid-template-columns: auto 40% auto;
+	}
+    h1{
+        text-align: center;
+        font-size: rem-calc(30);
+        font-family: 'Gentium Book Basic', serif;
+        font-weight: 500;
+        padding-bottom: 25px;
+    }
+
+	> div {
+		grid-area: form;
+
+
+		form{
+            padding: 0 20px;
+		    display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-areas:
+			"first first"
+			"email email"
+			"comment comment"
+			"button button";
+			grid-gap: 50px;
+
+			input{
+				width: 98%;
+				border: none;
+				padding: 1%;
+				height: 30px;
+
+			}
+
+			textarea{
+				width: 98%;
+				border: none;
+				padding: 1%;
+				height: 200px;
+			}
+
+
+			div:nth-child(1){
+				grid-area: first;
+                font-family: 'Barlow', sans-serif;
+                border:$red solid 4px;
+                border-top: none;
+                border-right: none;
+			}
+
+			div:nth-child(2){
+				grid-area: email;
+                font-family: 'Barlow', sans-serif;
+                border:$red solid 4px;
+                border-top: none;
+                border-right: none;
+			}
+
+			div:nth-child(3){
+				grid-area: comment;
+                font-family: 'Barlow', sans-serif;
+                border:$red solid 4px;
+
+			}
+
+
+			div:nth-child(4){
+				grid-area: button;
+				text-align: center;
+				button{
+					color: $white;
+                    font-size: rem-calc(20);
+                    background-color: $gray;
+                    border: 5px solid $red;
+					padding: 7px 55px;
+				}
+			}
+
+
+
+
+
+		}
+	}
+
+}
+
+
+
+
+
+}
