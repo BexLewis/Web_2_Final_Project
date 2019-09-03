@@ -312,7 +312,17 @@ template {
     Base
 ============= */
 body {
-  background-color: #C4C4C4; }
+  background-image: url("../img/texture.jpg");
+  background-size: 80%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat; }
+  @media (min-width: 990px) {
+    body {
+      background-size: 60%; } }
+  @media (min-width: 1440px) {
+    body {
+      background-size: 50%; } }
   body h1,
   body h2,
   body h3,
@@ -342,10 +352,24 @@ a:visited {
     font-family: 'Gentium Book Basic', serif;
     color: #fff;
     text-decoration: none;
-    transition: 0.25s; }
+    transition: 0.25s;
+    font-size: 1.375rem; }
   .link-button a:hover, .link-button a:active {
     font-family: 'Gentium Book Basic', serif;
     color: #B11313; }
+
+.link-button:hover, .link-button:active {
+  background-color: #000; }
+
+@media (min-width: 1440px) {
+  .xl-lockin {
+    display: grid;
+    grid-template-areas: ". content .";
+    grid-template-columns: auto 1440px auto; } }
+
+@media (min-width: 1440px) {
+  .xl-lockin .xl-lockin-content {
+    grid-area: content; } }
 
 /* =============
     Typography
@@ -423,7 +447,8 @@ header nav {
       header nav a:active,
       header nav a:hover {
         border-bottom: 2px solid #B11313;
-        padding-bottom: 3px; } }
+        padding-bottom: 3px;
+        margin-bottom: -5px; } }
   header nav ul {
     margin: 10px 20px; }
     @media (min-width: 990px) {
@@ -491,10 +516,10 @@ footer {
   background-color: #353535;
   height: 90px; }
   footer ul {
-    align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 15px 70px; }
+    align-items: center;
+    padding: 25px 70px; }
     @media (min-width: 715px) {
       footer ul {
         padding: 15px;
@@ -509,10 +534,10 @@ footer {
         justify-content: flex-start; } }
     @media (min-width: 715px) {
       footer ul li {
-        padding: 0 30px; } }
+        padding: 10px 30px; } }
     footer ul li i {
       color: #fff;
-      font-size: 3.75rem; }
+      font-size: 2.5rem; }
 
 /* ===================
     4. Form
@@ -737,162 +762,199 @@ form .button {
     display: grid;
     grid-template-areas: ". iconic ." ". tattoo .";
     grid-template-columns: 1.1fr 1fr 1.1fr;
-    padding-top: 135px;
+    padding-top: 110px;
     text-align: center; }
     @media (min-width: 715px) {
       #about div article {
+        padding-top: 70px;
         grid-template-areas: ". iconic ." ". tattoo .";
         grid-template-columns: 1.6fr 1fr 1.6fr; } }
     @media (min-width: 990px) {
       #about div article {
-        padding-top: 230px;
+        padding-top: 125px;
         grid-template-areas: ". iconic ." ". tattoo .";
         grid-template-columns: 2.1fr 1fr 2.1fr; } }
     @media (min-width: 1440px) {
       #about div article {
-        padding-top: 310px;
+        padding-top: 160px;
         grid-template-areas: ". iconic ." ". tattoo .";
         grid-template-columns: 3fr 1fr 3fr; } }
     #about div article h1 {
       font-family: 'Lobster', cursive;
-      font-size: 4.6875rem;
+      font-size: 6.25rem;
       grid-area: iconic;
       text-align: center; }
       @media (min-width: 715px) {
         #about div article h1 {
-          font-size: 5rem; } }
+          font-size: 7.5rem; } }
       @media (min-width: 990px) {
         #about div article h1 {
-          font-size: 5.3125rem; } }
+          font-size: 9.375rem; } }
       @media (min-width: 1440px) {
         #about div article h1 {
-          font-size: 6.25rem; } }
+          font-size: 12.5rem; } }
     #about div article h2 {
       background-color: #B11313;
       font-family: 'Pirata One', cursive;
-      font-size: 2.5rem;
+      font-size: 3.75rem;
       grid-area: tattoo;
       text-align: center; }
       @media (min-width: 715px) {
         #about div article h2 {
-          font-size: 2.8125rem; } }
+          font-size: 4.6875rem; } }
       @media (min-width: 990px) {
         #about div article h2 {
-          font-size: 3.4375rem; } }
+          font-size: 5.625rem;
+          margin-top: -10px; } }
       @media (min-width: 1440px) {
         #about div article h2 {
-          font-size: 4.0625rem; } }
+          font-size: 7.5rem;
+          margin-top: -30px; } }
+
+#about h3 {
+  font-size: 1.875rem;
+  font-family: 'Gentium Book Basic', serif;
+  color: #fff;
+  text-align: center;
+  background-color: #131313;
+  padding: 60px 0 20px; }
+  @media (min-width: 715px) {
+    #about h3 {
+      padding-top: 80px; } }
+  @media (min-width: 1440px) {
+    #about h3 {
+      padding-top: 100px; } }
 
 #about p {
   font-family: 'Barlow', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.1875rem;
-  padding: 23px 27px;
-  text-align: justify; }
+  padding: 0px 27px 60px;
+  text-align: justify;
+  background-color: #131313;
+  color: #fff; }
   @media (min-width: 715px) {
     #about p {
-      background-color: #131313;
-      color: #fff;
       text-align: center;
-      padding: 80px 127px;
+      padding: 0 127px 80px;
       font-size: 1.125rem;
       line-height: 1.625rem; } }
   @media (min-width: 990px) {
     #about p {
-      padding: 80px 200px; } }
+      padding: 0px 200px 80px; } }
   @media (min-width: 1440px) {
     #about p {
-      padding: 100px 300px;
+      padding: 0px 300px 100px;
       font-size: 1.25rem; } }
 
 /* =============
     Appointments
 ============= */
 #appointments {
-  background-color: #131313;
-  text-align: center;
-  padding-top: 110px; }
+  margin-top: 110px; }
   @media (min-width: 715px) {
     #appointments {
-      padding: 110px 90px 0; } }
-  @media (min-width: 990px) {
+      margin-top: 234px; } }
+  @media (min-width: 1440px) {
     #appointments {
-      padding: 234px 70px 0; } }
-  @media (min-width: 990px) {
-    #appointments {
-      padding: 270px 250px 0; } }
-  #appointments h1 {
-    color: #B11313;
-    font-family: 'Pirata One', cursive;
-    font-size: 2.8125rem;
-    padding-bottom: 30px; }
+      margin-top: 270px; } }
+  #appointments section section {
+    text-align: center;
+    padding-bottom: 130px; }
     @media (min-width: 715px) {
-      #appointments h1 {
-        font-size: 4.375rem; } }
+      #appointments section section {
+        padding: 0px 70px 130px; } }
     @media (min-width: 990px) {
-      #appointments h1 {
-        font-size: 5.625rem; } }
-    @media (min-width: 1440px) {
-      #appointments h1 {
-        font-size: 7.5rem; } }
-  #appointments div {
-    padding: 0 27px;
-    background-color: #C4C4C4;
-    font-family: 'Barlow', sans-serif;
-    text-align: justify; }
-    @media (min-width: 715px) {
-      #appointments div {
-        padding: 0 40px; } }
+      #appointments section section {
+        padding: 0px 70px 230px; } }
     @media (min-width: 990px) {
-      #appointments div {
-        padding: 0 50px; } }
-    @media (min-width: 1440px) {
-      #appointments div {
-        padding: 22px 140px; } }
-    #appointments div h2 {
-      font-family: 'Gentium Book Basic', serif;
-      text-align: center; }
-    #appointments div p {
-      padding: 27px 0; }
-    #appointments div p:nth-child(3) {
-      display: none; }
-      @media (min-width: 715px) {
-        #appointments div p:nth-child(3) {
-          display: inline-block; } }
-    #appointments div a:link,
-    #appointments div a:visited {
-      font-family: 'Gentium Book Basic', serif;
+      #appointments section section {
+        padding: 0px 150px 270px; } }
+    #appointments section section h1 {
+      background-color: #131313;
       color: #B11313;
-      text-decoration: none;
-      transition: 0.25s;
-      font-size: 1.375rem;
-      line-height: 1.5625rem;
-      text-align: center;
-      display: block;
-      font-weight: 500; }
-    #appointments div a:hover, #appointments div a:active {
-      color: #000; }
+      font-family: 'Pirata One', cursive;
+      font-size: 4.375rem;
+      padding-top: 30px; }
+      @media (min-width: 715px) {
+        #appointments section section h1 {
+          font-size: 5rem; } }
+      @media (min-width: 990px) {
+        #appointments section section h1 {
+          font-size: 5.625rem; } }
+      @media (min-width: 1440px) {
+        #appointments section section h1 {
+          font-size: 7.5rem; } }
+    #appointments section section div {
+      padding: 0 27px 10px;
+      background-color: #131313;
+      font-family: 'Barlow', sans-serif;
+      text-align: justify; }
+      @media (min-width: 715px) {
+        #appointments section section div {
+          padding: 0 40px 20px; } }
+      @media (min-width: 990px) {
+        #appointments section section div {
+          padding: 0 80px 20px; } }
+      @media (min-width: 1440px) {
+        #appointments section section div {
+          padding: 22px 180px 20px; } }
+      #appointments section section div h2 {
+        font-size: 1.875rem;
+        font-family: 'Gentium Book Basic', serif;
+        color: #fff;
+        text-align: center; }
+      #appointments section section div p {
+        padding: 27px 0;
+        color: #fff; }
+      #appointments section section div p:nth-child(3) {
+        display: none; }
+        @media (min-width: 715px) {
+          #appointments section section div p:nth-child(3) {
+            display: inline-block; } }
+      #appointments section section div p:nth-child(5) {
+        padding: 10px;
+        margin: 10px 90px; }
+        @media (min-width: 715px) {
+          #appointments section section div p:nth-child(5) {
+            margin: 10px 20%; } }
+        @media (min-width: 990px) {
+          #appointments section section div p:nth-child(5) {
+            margin: 10px 20%; } }
+      #appointments section section div a:link,
+      #appointments section section div a:visited {
+        font-family: 'Gentium Book Basic', serif;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.25s;
+        text-align: center;
+        display: block;
+        font-weight: 500; }
+      #appointments section section div a:hover, #appointments section section div a:active {
+        color: #B11313; }
 
 /* =============
     Chris
 ============= */
 #chris {
-  padding-top: 130px; }
+  margin-top: 110px; }
   @media (min-width: 715px) {
     #chris {
-      padding-top: 234px; } }
+      margin-top: 234px; } }
   @media (min-width: 1440px) {
     #chris {
-      padding-top: 270px; } }
+      margin-top: 270px; } }
   #chris h1 {
     font-family: 'Pirata One', cursive;
     text-align: center;
     color: #B11313;
-    font-size: 2.8125rem; }
+    background-color: #131313;
+    padding: 40px 0 10px;
+    font-size: 4.375rem; }
     @media (min-width: 715px) {
       #chris h1 {
-        font-size: 4.375rem; } }
+        font-size: 5rem; } }
     @media (min-width: 990px) {
       #chris h1 {
         font-size: 5.625rem; } }
@@ -1057,21 +1119,23 @@ form .button {
     Mark
 ============= */
 #mark {
-  padding-top: 130px; }
+  margin-top: 110px; }
   @media (min-width: 715px) {
     #mark {
-      padding-top: 234px; } }
+      margin-top: 234px; } }
   @media (min-width: 1440px) {
     #mark {
-      padding-top: 270px; } }
+      margin-top: 270px; } }
   #mark h1 {
     font-family: 'Pirata One', cursive;
     text-align: center;
     color: #B11313;
-    font-size: 3.125rem; }
+    background-color: #131313;
+    padding: 40px 0 10px;
+    font-size: 4.375rem; }
     @media (min-width: 715px) {
       #mark h1 {
-        font-size: 4.375rem; } }
+        font-size: 5rem; } }
     @media (min-width: 990px) {
       #mark h1 {
         font-size: 5.625rem; } }
@@ -1243,23 +1307,16 @@ form .button {
     Contact
 ============= */
 #contact article {
-  padding-top: 110px;
   background-color: #131313; }
-  @media (min-width: 715px) {
-    #contact article {
-      padding-top: 234px; } }
-  @media (min-width: 1440px) {
-    #contact article {
-      padding-top: 270px; } }
   #contact article h1 {
     font-family: 'Pirata One', cursive;
     text-align: center;
     color: #B11313;
-    font-size: 2.8125rem;
-    padding: 83px 70px 25px; }
+    font-size: 4.375rem;
+    padding: 40px 70px 10px; }
     @media (min-width: 715px) {
       #contact article h1 {
-        font-size: 4.375rem; } }
+        font-size: 5rem; } }
     @media (min-width: 990px) {
       #contact article h1 {
         font-size: 5.625rem; } }
@@ -1269,52 +1326,18 @@ form .button {
   #contact article div {
     background-image: url("../img/locationHero.jpg");
     height: 327px;
-    background-size: cover;
-    margin-bottom: 30px; }
+    background-size: cover; }
     @media (min-width: 715px) {
       #contact article div {
-        margin: 0 70px; } }
+        margin: 0px 70px; } }
     @media (min-width: 990px) {
       #contact article div {
         height: 424px;
-        margin: 0 90px; } }
+        margin: 0px 90px; } }
     @media (min-width: 1440px) {
       #contact article div {
         height: 591px;
-        margin: 0 173px; } }
-  #contact article h2 {
-    font-size: 1rem;
-    font-family: 'Barlow', sans-serif;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0; }
-  #contact article #locationButtons {
-    margin-top: 20px;
-    display: grid;
-    grid-template-areas: "button-1" "button-2";
-    grid-gap: 15px; }
-    @media (min-width: 523px) {
-      #contact article #locationButtons {
-        padding: 0 10%; } }
-    @media (min-width: 715px) {
-      #contact article #locationButtons {
-        grid-template-areas: "button-1 button-2";
-        padding: 0; } }
-    @media (min-width: 990px) {
-      #contact article #locationButtons {
-        grid-gap: 30px;
-        padding: 0 20%; } }
-    #contact article #locationButtons p {
-      margin: 10px 60px;
-      font-size: 1.125rem;
-      padding: 5px 35px; }
-    #contact article #locationButtons p:first-child {
-      grid-area: button-1;
-      text-align: center;
-      padding: 5px 50px; }
-    #contact article #locationButtons p:last-child {
-      grid-area: button-2;
-      text-align: center; }
+        margin: 0px 173px; } }
 
 #contact #form {
   background-color: #131313;
@@ -1322,7 +1345,7 @@ form .button {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". form .";
-  padding: 30px 0; }
+  padding: 50px 0; }
   @media (min-width: 715px) {
     #contact #form {
       padding: 30px 132px; } }
@@ -1337,7 +1360,7 @@ form .button {
       grid-template-columns: auto 40% auto; } }
   #contact #form h1 {
     text-align: center;
-    font-size: 1.5625rem;
+    font-size: 1.875rem;
     font-family: 'Gentium Book Basic', serif;
     font-weight: 500;
     padding-bottom: 25px; }
@@ -1380,6 +1403,7 @@ form .button {
         text-align: center; }
         #contact #form > div form div:nth-child(4) button {
           color: #fff;
+          font-size: 1.25rem;
           background-color: #353535;
           border: 5px solid #B11313;
           padding: 7px 55px; }
@@ -1388,13 +1412,13 @@ form .button {
     Studio
 ============= */
 #studio {
-  padding-top: 130px; }
+  margin-top: 130px; }
   @media (min-width: 715px) {
     #studio {
-      padding-top: 234px; } }
+      margin-top: 234px; } }
   @media (min-width: 1440px) {
     #studio {
-      padding-top: 270px; } }
+      margin-top: 270px; } }
   #studio div {
     background-color: #131313;
     /* ===================
@@ -1410,22 +1434,59 @@ form .button {
       font-family: 'Pirata One', cursive;
       text-align: center;
       color: #B11313;
-      font-size: 2.8125rem;
-      padding-top: 50px; }
+      font-size: 4.375rem;
+      padding-top: 40px; }
       @media (min-width: 715px) {
         #studio div h1 {
-          font-size: 4.375rem; } }
+          font-size: 5rem; } }
       @media (min-width: 990px) {
         #studio div h1 {
           font-size: 5.625rem; } }
       @media (min-width: 1440px) {
         #studio div h1 {
           font-size: 7.5rem; } }
+    #studio div #studio-grid {
+      display: grid;
+      grid-template-areas: "vid" "map"; }
+      @media (min-width: 990px) {
+        #studio div #studio-grid {
+          grid-template-areas: "vid map";
+          grid-template-columns: 50% 50%;
+          padding-bottom: 100px; } }
+      #studio div #studio-grid #map {
+        padding-top: 15px;
+        padding-bottom: 30px;
+        grid-area: map;
+        display: grid;
+        grid-template-areas: ". mp .";
+        grid-template-columns: 10px auto 10px; }
+        @media (min-width: 715px) {
+          #studio div #studio-grid #map {
+            grid-template-columns: 10% auto 10%; } }
+        @media (min-width: 990px) {
+          #studio div #studio-grid #map {
+            grid-template-columns: 5% auto 10%;
+            padding-bottom: 2%; } }
+        #studio div #studio-grid #map div {
+          margin-top: 10px;
+          grid-area: mp;
+          background-image: url("../img/map.svg");
+          height: 250px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat; }
+          @media (min-width: 715px) {
+            #studio div #studio-grid #map div {
+              height: 400px;
+              margin: 0px .1%; } }
+          @media (min-width: 990px) {
+            #studio div #studio-grid #map div {
+              height: 100%; } }
     #studio div .video-wrapper {
       position: relative;
       padding-bottom: 75%;
       /* 4:6 */
-      padding-top: 25px;
+      padding-top: 0px;
       height: 0; }
     #studio div .video-wrapper iframe {
       position: absolute;
@@ -1437,19 +1498,20 @@ form .button {
       padding-bottom: 56.25%;
       /* 16:9 */ }
     #studio div #video {
+      grid-area: vid;
       display: grid;
       grid-template-columns: 10px auto 10px;
       grid-template-areas: ". video ."; }
       @media (min-width: 715px) {
         #studio div #video {
-          grid-template-columns: .1% auto .1%; } }
+          grid-template-columns: 10% auto 10%; } }
       @media (min-width: 990px) {
         #studio div #video {
-          grid-template-columns: 5% auto 5%; } }
+          grid-template-columns: 10% auto 5%; } }
       @media (min-width: 1440px) {
         #studio div #video {
           grid-template-areas: ". video .";
           grid-template-columns: 10% auto 10%; } }
       #studio div #video article {
         grid-area: video;
-        padding: 3vh 0; }
+        padding: 1.5vh 0 1.5vh; }

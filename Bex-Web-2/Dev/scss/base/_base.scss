@@ -2,7 +2,18 @@
     Base
 ============= */
 body {
-    background-color: $lightgray;
+    background-image: url("../img/texture.jpg");
+    background-size: 80%;
+    background-attachment: fixed;
+ background-position: center;
+ background-repeat: repeat;
+ @include lg{
+     background-size: 60%;
+ }
+ @include xl{
+     background-size: 50%;
+ }
+
     h1,
     h2,
     h3,
@@ -42,10 +53,29 @@ a:visited {
         color:$white;
         text-decoration: none;
         transition: 0.25s;
+        font-size: rem-calc(22);
     }
     a:hover, a:active{
         font-family: 'Gentium Book Basic', serif;
         color:$red;
+
+    }
+}
+.link-button:hover, .link-button:active{
+        background-color: $black;
+
+}
+
+.xl-lockin{
+    @include xl{
+    display:grid;;
+    grid-template-areas:". content .";
+    grid-template-columns: auto 1440px auto;
+}
+    .xl-lockin-content{
+        @include xl{
+        grid-area:content;
+    }
     }
 
 }

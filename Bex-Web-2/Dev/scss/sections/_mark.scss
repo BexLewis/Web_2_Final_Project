@@ -2,20 +2,22 @@
     Mark
 ============= */
 #mark{
-    padding-top: 130px;
+    margin-top: 110px;
     @include md{
-        padding-top: 234px;
+        margin-top: 234px;
     }
     @include xl{
-        padding-top: 270px;
+        margin-top: 270px;
     }
     h1{
         font-family: 'Pirata One', cursive;
         text-align: center;
         color:$red;
-        font-size: rem-calc(50);
+        background-color: $blackbg;
+        padding: 40px 0 10px;
+        font-size: rem-calc(70);
         @include md{
-            font-size: rem-calc(70);
+            font-size: rem-calc(80);
         }
         @include lg{
             font-size: rem-calc(90);

@@ -3,24 +3,17 @@
 ============= */
 #contact{
     article{
-
-        padding-top: 110px;
 background-color: $blackbg;
-@include md{
-    padding-top: 234px;
-}
-@include xl{
-    padding-top: 270px;
-}
+
 
 h1{
     font-family: 'Pirata One', cursive;
     text-align: center;
     color:$red;
-    font-size: rem-calc(45);
-    padding: 83px 70px 25px;
+    font-size: rem-calc(70);
+    padding: 40px 70px 10px;
     @include md{
-        font-size: rem-calc(70);
+        font-size: rem-calc(80);
     }
     @include lg{
         font-size: rem-calc(90);
@@ -33,67 +26,22 @@ div{
     background-image: url("../img/locationHero.jpg");
     height:327px;
     background-size: cover;
-    margin-bottom: 30px;
+
 
     @include md{
-        margin: 0 70px;
+        margin: 0px 70px;
     }
 
     @include lg{
         height:424px;
-        margin: 0 90px;
+        margin: 0px 90px;
     }
     @include xl{
         height:591px;
-        margin: 0 173px;
+        margin: 0px 173px;
     }
 }
 
-h2{
-    font-size: rem-calc(16);
-    font-family: 'Barlow', sans-serif;
-    color: $white;
-    text-align: center;
-    padding: 5px 0;
-}
-
-#locationButtons{
-    margin-top: 20px;
-    display: grid;
-    grid-template-areas:"button-1" "button-2";
-    grid-gap:15px;
-    @include sm{
-        padding: 0 10%;
-    }
-    @include md{
-        grid-template-areas:"button-1 button-2";
-        padding: 0;
-
-    }
-    @include lg{
-        grid-gap:30px;
-        padding: 0 20%;
-
-    }
-
-    p{
-        margin:10px 60px;
-        font-size:rem-calc(18);
-        padding: 5px 35px;
-
-    }
-    p:first-child{
-        grid-area:button-1;
-        text-align: center;
-        padding: 5px 50px;
-    }
-    p:last-child{
-        grid-area:button-2;
-        text-align: center;
-
-
-    }
-}
 
 
 }
@@ -103,7 +51,7 @@ h2{
 	display: grid;
 	grid-template-columns: 10px auto 10px;
 	grid-template-areas: ". form .";
-	padding: 30px 0;
+	padding: 50px 0;
     @include md{
     padding: 30px 132px;
     }
@@ -118,7 +66,7 @@ h2{
 	}
     h1{
         text-align: center;
-        font-size: rem-calc(25);
+        font-size: rem-calc(30);
         font-family: 'Gentium Book Basic', serif;
         font-weight: 500;
         padding-bottom: 25px;
@@ -184,6 +132,7 @@ h2{
 				text-align: center;
 				button{
 					color: $white;
+                    font-size: rem-calc(20);
                     background-color: $gray;
                     border: 5px solid $red;
 					padding: 7px 55px;
